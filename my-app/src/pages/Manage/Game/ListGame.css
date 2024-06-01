@@ -1,0 +1,46 @@
+.list-game-container {
+  margin: 20px;
+}
+
+.list-game-title {
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.btn-primary {
+  margin-bottom: 20px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc; /* Thêm viền với màu xám nhạt */
+  border-radius: 5px; /* Đưa ra một góc cong nhẹ cho form */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+.btn .btn-primary {
+  background-color: red;
+  outline: none;
+}

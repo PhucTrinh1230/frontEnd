@@ -1,0 +1,36 @@
+.toggle {
+  width: 25px;
+  height: 10px;
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 100rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.toggle.active {
+  background-color: rgb(44, 216, 98);
+}
+
+.spinner {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 100rem;
+  transition: all 0.2s linear;
+}
+
+.spinner.active {
+  transform: translateX(15px);
+}
+
+/* .toggle-control {
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+} */
+
+.toggle-control > * {
+  cursor: pointer;
+}
