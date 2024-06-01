@@ -3,9 +3,9 @@
     margin-left: 5%;
     
 }
-.btnNext{
-    border-radius: 100px;
+.btnNext:hover{
+    background-color: rgb(235, 194, 166);
 }
-.btnPrev{
-    border-radius: 100px;
+.btnPrev:hover{
+    background-color: rgb(235, 194, 166);
 }

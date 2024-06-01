@@ -17,13 +17,12 @@
     margin-top: 30px;
 }
 
-/* styles.css */
+
 nav>a{
     color: black; /* Màu sắc của liên kết */
     text-decoration: none; /* Bỏ gạch chân mặc định */
    border-bottom: black solid 1px;
    border-left: black solid 1px;
-   border-right: black solid 1px;
     padding: 5px; /* Thêm khoảng đệm */
     display: block; /* Hiển thị như khối để dễ dàng điều chỉnh khoảng cách */
   }
@@ -43,7 +42,7 @@ nav>a{
 
 .active
 {
-  background-color: rgb(156, 156, 170);
+  background-color:rgb(75, 88, 237);
   font-style: oblique;
   font-weight: bold;
 }

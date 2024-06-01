@@ -1,6 +1,7 @@
 import './Content.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Btn from '../../common/ButtonSupport';
+
 const Content = () => {
     return (
         <div className='container'>

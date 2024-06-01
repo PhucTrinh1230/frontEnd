@@ -5,7 +5,7 @@ import Content from '../../components/layout/ContentSupport/Content';
 import Slidebar from '../../components/layout/Slidebar';
 import Header from '../../components/layout/Header';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
+import { BrowserRouter, BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import ContentPage2 from '../../components/layout/ContentSupport/ContentPage2';
 import ContentPage3 from '../../components/layout/ContentSupport/ContentPage3';
 import ContentPage4 from '../../components/layout/ContentSupport/ContentPage4';
@@ -16,8 +16,11 @@ import ContentPage8 from '../../components/layout/ContentSupport/ContentPage8';
 import ContentPage9 from '../../components/layout/ContentSupport/ContentPage9';
 import ContentPage10 from '../../components/layout/ContentSupport/ContentPage10';
 import ContentPage11 from '../../components/layout/ContentSupport/ContentPage11';
+
+
 const MainContent = () => {
   return (
+    <BrowserRouter>
     <Router>
       <div className='container'>
         <React.Fragment>
@@ -53,7 +56,7 @@ const MainContent = () => {
       </div>
     </Router>
 
-
+    </BrowserRouter>
 
   )
 }
