@@ -20,7 +20,13 @@ const Header = () => {
 
                 
 
-                    <button type="button" className="btn btn-light">Trang chủ</button>
+                <a
+            class="nav-link active"
+            aria-current="page"
+            href="http://localhost:3000/profile#"
+          >
+          Profile
+          </a>
 
                     <div class="input-group flex-nowrap">
                         <span className="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -32,6 +38,7 @@ const Header = () => {
                 {/* <div className={`item ${active}? '' : 'isActive'`}></div> */}
             </div>
 
-        </div>)
+        </div>
+        )
 }
 export default Header;

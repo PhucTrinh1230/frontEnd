@@ -23,29 +23,29 @@ const Slidebar = () => {
                                 <li className="list-group-item"><strong>GIỚI THIỆU</strong>
                                 </li>
                                 <nav>
-                                <NavLink to='/'>Lý do nên mua game bản quyền</NavLink>
-                                <NavLink to='/support2'>Giới thiệu Steam Shop</NavLink>
-                                <NavLink to='/support3'>Hệ thống Fanpage chính thức </NavLink>
-                                <NavLink to='/support4'>Chính sách VIP</NavLink>
-                                <NavLink to='/support5'>Điều khoản dịch vụ</NavLink>
-                                <NavLink to='/support6'>Chính sách bảo mật</NavLink>
+                                <NavLink to='/support/support1'>Lý do nên mua game bản quyền</NavLink>
+                                <NavLink to='/support/support2'>Giới thiệu Steam Shop</NavLink>
+                                <NavLink to='/support/support3'>Hệ thống Fanpage chính thức </NavLink>
+                                <NavLink to='/support/support4'>Chính sách VIP</NavLink>
+                                <NavLink to='/support/support5'>Điều khoản dịch vụ</NavLink>
+                                <NavLink to='/support/support6'>Chính sách bảo mật</NavLink>
                                 </nav>
                               
                                 <li className="list-group-item"><strong>HƯỚNG DẪN MUA HÀNG</strong>
                                 </li>
                                <nav>
-                                <NavLink to='/support7'>Hướng dẫn tạo tài khoản</NavLink>
-                                <NavLink to='/support8'>Hướng dẫn nạp tiền</NavLink>
-                                <NavLink to='/support9'>Hướng dẫn thanh toán</NavLink>
+                                <NavLink to='/support/support7'>Hướng dẫn tạo tài khoản</NavLink>
+                                <NavLink to='/support/support8'>Hướng dẫn nạp tiền</NavLink>
+                                <NavLink to='/support/support9'>Hướng dẫn thanh toán</NavLink>
                                 </nav>
                                 <li className="list-group-item"><strong>BẢO HÀNH</strong>
                                 </li>
                                 <nav>
-                                <NavLink to='/support10'>Thông tin bảo hành chung</NavLink>
+                                <NavLink to='/support/support10'>Thông tin bảo hành chung</NavLink>
                                 </nav>
                                 <li className="list-group-item"><strong>CÂU HỎI THƯỜNG GẶP</strong>
                                 </li>
-                                <nav> <NavLink to='/support11'>Hướng dẫn lấy lại account</NavLink></nav>
+                                <nav> <NavLink to='/support/support11'>Hướng dẫn lấy lại account</NavLink></nav>
 
 
 

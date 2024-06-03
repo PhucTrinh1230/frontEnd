@@ -8,9 +8,9 @@ const ContentPage9 = () => {
         <div className='wrapper'>
             <h3>Hướng dẫn thanh toán</h3>
             <h5>Bước 1:</h5>
-            <span>Tìm kiếm và truy cập sản phẩm bạn muốn mua<br></br>
+            Tìm kiếm và truy cập sản phẩm bạn muốn mua<br></br>
 
-                Nhấn <strong>Mua Ngay</strong> hoặc <strong>Thêm vào giỏ </strong>nếu muốn mua thêm nhiều sản phẩm khác</span>
+                Nhấn <strong>Mua Ngay</strong> hoặc <strong>Thêm vào giỏ </strong>nếu muốn mua thêm nhiều sản phẩm khác
             <br></br>
             <br></br>
             <img className='img1' src='https://help.divineshop.vn/~gitbook/image?url=https%3A%2F%2F532840585-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-M3-IU1k8a0MMGt6Gmx-%252Fuploads%252FQbH4vExLMus2ntZCieIu%252Fimage.png%3Falt%3Dmedia%26token%3D15bb3766-ba98-4519-b88f-aca5c05ae9df&width=768&dpr=1&quality=100&sign=84ed675f6d6cb48a9a0d9daa633c76326692c1fe1e9886ddcb8ff5d915661e6c' alt='thanhtoanbuoc1' />

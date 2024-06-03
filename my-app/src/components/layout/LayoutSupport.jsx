@@ -7,18 +7,17 @@ import React from 'react';
 import ContentPage2 from './ContentSupport/ContentPage2';
 import ContentPage3 from './ContentSupport/ContentPage3';
 import { BrowserRouter, BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
+import ContentPage9 from './ContentSupport/ContentPage9';
 
 const LayoutSupport = () => {
     return (
 
         <React.Fragment>
-            <BrowserRouter>
+            
             <div className='container'>
                 <div className='row'>
+                 
                     <div>
-                        <Header />
-                    </div>
-                    <main>
                         <Col xxl={4} xl={4} lg={4} md={1} sm={1} >
                             <Slidebar />
 
@@ -27,10 +26,10 @@ const LayoutSupport = () => {
                           <Content/>
 
                         </Col>
-                    </main>
+                    </div>
                 </div>
             </div>
-            </BrowserRouter>
+         
         </React.Fragment>
 
     )

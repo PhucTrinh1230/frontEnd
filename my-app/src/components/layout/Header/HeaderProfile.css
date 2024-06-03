@@ -28,7 +28,7 @@ span>a{
 
 .topHeader>.container{
     margin-left: 52%;
-    margin-top: 8px;
+    margin-top: 0px;
     position: absolute;
 }
 
@@ -36,6 +36,7 @@ span>a{
 {
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,80,236,1) 0%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);
+margin-top: -20px;
 }
 .LogoSteam{
     height: 100px;

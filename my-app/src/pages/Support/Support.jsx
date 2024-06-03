@@ -20,43 +20,37 @@ import ContentPage11 from '../../components/layout/ContentSupport/ContentPage11'
 
 const MainContent = () => {
   return (
-    <BrowserRouter>
-    <Router>
+  
+
       <div className='container'>
         <React.Fragment>
-          <Header />
-          <Row>
-            <Col xxl={4} xl={4} lg={4} md={1} sm={1} >
-              <Slidebar />
-
-            </Col>
-
-            <Col xxl={8} xl={8} lg={8} md={11} sm={11}>
-
-              <Routes>
-                <Route path='/' element={<Content/>} />
-                <Route path='/support2' element={<ContentPage2/>} />
-                <Route path='/support3' element={<ContentPage3/>} />
-                <Route path='/support4' element={<ContentPage4/>} />
-                <Route path='/support5' element={<ContentPage5/>} />
-                <Route path='/support6' element={<ContentPage6/>} />
-                <Route path='/support7' element={<ContentPage7/>} />
-                <Route path='/support8' element={<ContentPage8/>} />
-                <Route path='/support9' element={<ContentPage9/>} />
-                <Route path='/support10' element={<ContentPage10/>} />
-                <Route path='/support11' element={<ContentPage11/>} />
-              
-              </Routes>
-
-            </Col>
-
-
-          </Row>
+       
+        <div className="row">
+        <div className="col-lg-4">
+          <Slidebar />  
+        </div>
+        <div className="col-lg-8">
+          <Routes>
+            <Route path="" element={<Content/>} />
+            <Route path="support1" element={<Content/>} />
+            <Route path="support2" element={<ContentPage2 />} />
+            <Route path="support3" element={<ContentPage3 />} />
+            <Route path="support4" element={<ContentPage4 />} />
+            <Route path="support5" element={<ContentPage5 />} />
+            <Route path="support6" element={<ContentPage6 />} />
+            <Route path="support7" element={<ContentPage7 />} />
+            <Route path="support8" element={<ContentPage8 />} />
+            <Route path="support9" element={<ContentPage9 />} />
+            <Route path="support10" element={<ContentPage10 />} />
+            <Route path="support11" element={<ContentPage11 />} />
+          </Routes>
+        </div>
+      </div>
         </React.Fragment>
       </div>
-    </Router>
+ 
 
-    </BrowserRouter>
+
 
   )
 }

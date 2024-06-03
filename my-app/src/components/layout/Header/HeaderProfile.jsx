@@ -5,9 +5,38 @@ import LayoutSupport from '../LayoutSupport';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
 import DropdownProfile from '../../common/DropdownProfile';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
+import { fetchUserDataById, GetUserbyID } from '../../../services/userService';
+import { mergeUserData, fetchUserData, mergeOneUser } from '../../../services/userService';
+import React, { useState, useEffect } from 'react';
+
+const HeaderProfile = ({userId}) => {
 
 
-const HeaderProfile = () => {
+    const [userData, setUserData] = useState([]);
+    const [error, setError] = useState(null);
+    useEffect(() => {
+        const getData = async () => {
+          try {
+            const { accountData, userDetailData } = await fetchUserDataById(userId);
+            const mergedOneUser = {
+              ...userDetailData,
+              email: accountData.email,
+              rankTypeId: accountData.rankTypeId,
+              accountBalance: accountData.accountBalance,
+              level: accountData.level,
+            };
+            setUserData(mergedOneUser);
+            
+          } catch (error) {
+            setError(error.message);
+          }
+        };
+    
+        getData();
+      }, [userId]);
+
     return (
         <div className='wrapper'>
             <div className='topHeader'>
@@ -49,10 +78,31 @@ const HeaderProfile = () => {
                             </Col>
                             <Col xxl={3} xl={3} lg={3} md={4} sm={4} xs={4} >
                                 <div className='thongtinUser'>
-                                    thông tin ng dùng tại đây
+                                    Xin chào: {userData.firstname}
+                                    
                                 </div>
                             </Col>
 
+
+                     
+
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="http://localhost:3000/support"
+                                >
+                                    Support
+                                </a>
+                            </li>
+
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="http://localhost:3000/support/support9"
+                            >
+                                Huong dan thanh toan
+                            </a>
 
                             <Col xxl={3} xl={3} lg={3} md={4} sm={4} xs={4} >
                                 <div className='Cart'>
@@ -88,21 +138,21 @@ const HeaderProfile = () => {
                 </div>
             </div>
 
-                <Container>
+            <Container>
                 <div className='footerHeader'>
-                    <DropdownProfile/>
+                    <DropdownProfile />
                     <div className='thongtinthem'>
-                    <img src='https://cdn.divineshop.vn/image/catalog/Anh/Icon%20svg/Nap-thesvg-30724.svg?hash=1640449820' alt='thuthuatvatintuc'/>
-                    <a href='' alt='thuthuatvatintuc' >Thủ thuật & tin tức</a>
-                    <img src='https://cdn.divineshop.vn/image/catalog/Anh/Icon%20svg/Gioi-thieu-ban-be-87652.svg?hash=1640449820' alt='huongdanmuahang'/>
-                    <a href=''  alt='huongdanmuahang'>Hướng dẫn mua hàng</a>
-                    <img src='https://cdn.divineshop.vn/image/catalog/Anh/Icon%20svg/Lien-he-hop-tac-33199.svg?hash=1640449820' alt='lienhehoptac'/>
-                    <a href='' alt='lienhehoptac' >Liên hệ họp tác</a>
-                    <img src='https://cdn.divineshop.vn/image/catalog/Anh/Icon%20svg/Uu-dai-khach-vip-79547.svg?hash=1640449820' alt='uudaikhachvip'/>
-                    <a href='' alt='uudaikhachvip' >Ưu đãi khách VIP</a>
+                        <img src='https://cdn.divineshop.vn/image/catalog/Anh/Icon%20svg/Nap-thesvg-30724.svg?hash=1640449820' alt='thuthuatvatintuc' />
+                        <a href='' alt='thuthuatvatintuc' >Thủ thuật & tin tức</a>
+                        <img src='https://cdn.divineshop.vn/image/catalog/Anh/Icon%20svg/Gioi-thieu-ban-be-87652.svg?hash=1640449820' alt='huongdanmuahang' />
+                        <a href='' alt='huongdanmuahang'>Hướng dẫn mua hàng</a>
+                        <img src='https://cdn.divineshop.vn/image/catalog/Anh/Icon%20svg/Lien-he-hop-tac-33199.svg?hash=1640449820' alt='lienhehoptac' />
+                        <a href='' alt='lienhehoptac' >Liên hệ họp tác</a>
+                        <img src='https://cdn.divineshop.vn/image/catalog/Anh/Icon%20svg/Uu-dai-khach-vip-79547.svg?hash=1640449820' alt='uudaikhachvip' />
+                        <a href='' alt='uudaikhachvip' >Ưu đãi khách VIP</a>
                     </div>
-                 </div>
-                </Container>
+                </div>
+            </Container>
 
 
 
