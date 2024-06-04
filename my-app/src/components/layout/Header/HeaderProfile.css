@@ -1,48 +1,48 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sevillana&display=swap');
 
 
 
-.wrapper
-{
+.wrapper {
     font-family: "Lora", serif;
 }
 
-.topHeader{
-    background-color: rgb(10, 89,204);
-    height: 45px;
-    margin-top:-69px;
+.topHeader {
+    background-color: rgb(2, 19, 44);
+    height: 50px;
+    margin-top: -69px;
 }
-span{
-margin-left: 15px;
-color: white;
-font-size: 16px;
-text-align: center;
+
+span {
+    margin-left: 15px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
 
 }
-span>a{
+
+span>a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-.topHeader>.container{
+.topHeader>.container {
     margin-left: 52%;
     margin-top: 0px;
     position: absolute;
 }
 
-.mainHeader
-{
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,80,236,1) 0%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);
-margin-top: -20px;
+.mainHeader {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(41, 47, 62, 1) 0%, rgb(0, 0, 92) 0%, rgb(2, 91, 109) 100%, rgb(9, 191, 228) 100%);
+    margin-top: -20px;
 }
-.LogoSteam{
+
+.LogoSteam {
     height: 100px;
     width: 100px;
 }
-.inputHeader{
+
+.inputHeader {
     width: 300px;
     margin-left: 0px;
     margin-top: 30px;
@@ -50,39 +50,39 @@ margin-top: -20px;
 
 }
 
-.thongtinUser{
+.thongtinUser {
     margin-left: 40px;
     color: white;
-    margin-top:30px;
+    margin-top: 30px;
 }
-.Cart
-{
+
+.Cart {
     margin-left: 20px;
     width: 200px;
     color: white;
     margin-top: 30px;
 }
 
-.mainHeader2>a
-{
+.mainHeader2>a {
     text-decoration: none;
     color: white;
     margin-right: 50px;
     margin-left: 10px;
 }
-.mainHeader2>path{
+
+.mainHeader2 {
     color: white;
 }
 
-.thongtinthem>a{
-font-size: 14px;
-color: black;
-margin-left: 5px;
-margin-right: 20px;
-text-decoration: none;
+.thongtinthem>a {
+    font-size: 14px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 20px;
+    text-decoration: none;
 }
-.thongtinthem{
+
+.thongtinthem {
     margin-left: 350px;
     margin-top: -35px;
 }
-

@@ -1,6 +1,7 @@
 .sidebarProfile
 {
     width: 300px;
+    margin-top: 0px;
 }
 
 .sidebarProfile>.list-group>a

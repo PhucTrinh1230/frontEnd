@@ -15,6 +15,7 @@ import ContentPage9 from './components/layout/ContentSupport/ContentPage9';
 import Header from './components/layout/Header';
 import HeaderProfile from './components/layout/Header/HeaderProfile';
 import ContentProfile from './components/layout/ContentProfile/ContentProfile';
+import FooterProfile from './components/layout/Footer/FooterProfile';
 
 function App() {
   const currentURL = window.location.href;
@@ -29,7 +30,11 @@ function App() {
     <BrowserRouter>
       {currentURL === `http://localhost:3000/support` ||
       currentURL === `http://localhost:3000/support/*` ||
-      currentURL === `http://localhost:3000/support/support9` ? (
+      currentURL === `http://localhost:3000/support/support9`||
+      currentURL === `http://localhost:3000/support/support4` ||
+      currentURL === `http://localhost:3000/support/support3` 
+      
+      ? (
         <Header/>
       ) : (
         <HeaderProfile/>
@@ -42,6 +47,7 @@ function App() {
         <Route path="" element={<ContentPage9/>}></Route>
         {/* <Route path="/profile/user/profile/{:id}" element={<ContentProfile userId={3}/>}></Route> */}
       </Routes>
+      <FooterProfile/>
     </BrowserRouter>
     </React.Fragment>
     

@@ -3,21 +3,43 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { fetchUserDataById, GetUserbyID } from '../../../services/userService';
 import { mergeUserData, fetchUserData, mergeOneUser, updateAccount } from '../../../services/userService';
-
+import { Container } from 'react-bootstrap';
+import './ContentProfile.css'
 
 const ContentProfile = ({ userId }) => {
     const [userData, setUserData] = useState([]);
     const [error, setError] = useState(null);
     
-    const accountId =2 
+    const {accountId} = useParams()
     
     const [accountDatachange, setAccountData] = useState({
-        email: 'nguyentrongkhoa@gmail.com',
-        password: '12345'
+        email: '',
+        password: '' 
         
         
       });
     
+      
+    const [success, setSuccess] = useState(false);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setAccountData({
+            [name]: value,
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            await updateAccount(accountId, accountDatachange);
+            setSuccess(true);
+            setError(null);
+        } catch (error) {
+            setSuccess(false);
+            setError(error.message);
+        }
+    };
 
     useEffect(() => {
         const getData = async () => {
@@ -45,31 +67,12 @@ const ContentProfile = ({ userId }) => {
     
 
 
-    const [success, setSuccess] = useState(false);
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setAccountData({
-            [name]: value,
-        });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            await updateAccount(accountId, accountDatachange);
-            setSuccess(true);
-            setError(null);
-        } catch (error) {
-            setSuccess(false);
-            setError(error.message);
-        }
-    };
 
 
     return (
         <div>
-            <div className='thongtinaccountpage1 p-2 m-2'>
+            <Container>
+            <div className='thongtinaccountpage1'>
                 <h5>Tổng quan</h5>
                 <br></br>
                 Họ và tên:  <strong>{userData.lastname}</strong>  <strong>{userData.firstname}</strong><br></br>
@@ -80,7 +83,9 @@ const ContentProfile = ({ userId }) => {
                 Level: <strong>{userData.level}</strong><br></br>
             </div>
             <hr></hr>
-            <div>
+
+            </Container>
+            {/* <div>
 
                 <h5>Update Account Information</h5>
                 <br></br>
@@ -115,7 +120,7 @@ const ContentProfile = ({ userId }) => {
                    
                     <button type="submit">Update Account</button>
                 </form>
-            </div>
+            </div> */}
         </div>
     );
 };
