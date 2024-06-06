@@ -1,6 +1,6 @@
 .panel-title{
    text-align: center;
-    padding-top: 40px; /* Offset to accommodate fixed header */
+    padding-top: 80px; /* Offset to accommodate fixed header */
 
 }
 
@@ -25,6 +25,7 @@ nav>a{
    border-left: black solid 1px;
     padding: 5px; /* Thêm khoảng đệm */
     display: block; /* Hiển thị như khối để dễ dàng điều chỉnh khoảng cách */
+    background-color: white;
   }
   
   nav>a:hover {

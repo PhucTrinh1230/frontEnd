@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const ContentPage6 = () => {
     return (
-        <div className='wrapper'>
+        <div className='wrapper p-4'>
             <h3>Chính sách bảo mật</h3>
             <p><strong>1. Mục đích và phạm vi thu thập</strong></p>
             Việc thu thập dữ liệu chủ yếu trên DivineShop.vn bao gồm: email, điện thoại, tên đăng nhập, mật khẩu đăng nhập, địa chỉ Khách hàng. Đây là các thông tin mà DivineShop.vn cần Khách hàng cung cấp bắt buộc khi đăng ký sử dụng dịch vụ và DivineShop sử dụng nhằm liên hệ xác nhận khi Khách hàng đăng ký sử dụng dịch vụ trên DivineShop.vn, đảm bảo quyền lợi cho Khách hàng.

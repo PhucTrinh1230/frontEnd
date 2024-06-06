@@ -6,9 +6,9 @@ const Content = () => {
     return (
         <div className='container'>
             <div className='row'>
-                <div className='content'>
+                <div className='wrapper p-4'>
                     <h3>Lý do nên mua game bản quyền</h3>
-                    <span> <strong>Chơi game mà không cần bỏ tiền bản quyền ra đúng là lợi thật đấy, tuy nhiên bạn sẽ chẳng thể nào có được trải nghiệm tốt như những người đã bỏ tiền ra mua game đâu.</strong> </span>
+                    <strong>Chơi game mà không cần bỏ tiền bản quyền ra đúng là lợi thật đấy, tuy nhiên bạn sẽ chẳng thể nào có được trải nghiệm tốt như những người đã bỏ tiền ra mua game đâu.</strong> 
                     <div className='content-1'>
                         Số liệu thực tế đã thống kê rằng Việt Nam luôn nằm trong top 10 nước đứng đầu thế giới về tỉ lệ sử dụng phần mềm lậu. Từ lâu game thủ Việt Nam đã quen với việc chơi game crack, đến nỗi mỗi khi muốn trải nghiệm một tựa game mới ra, hầu hết chúng ta thường tìm kiếm bản crack trên Google đầu tiên chứ không phải là tìm mua nó trên steam hay những nền tảng phát hành khác.
                         <br></br>
@@ -88,11 +88,10 @@ const Content = () => {
                     <br></br>
                     <div className='content-3'>
                         <h3>Ủng hộ nhà phát hành</h3>
-                        <span>Mỗi một khoản tiền mà bạn chi ra để mua game đều sẽ trở về với nhà phát triển, về với những con người đã tạo ra những tựa game tuyệt vời cho bạn thưởng thức. Đây là khoản tiền mà họ xứng đáng được nhận sau bao nhiêu công sức đã bỏ ra, và cũng chính là kinh phí cho những dự án kế tiếp của họ. Tiền mà bạn bỏ ra để mua game không chỉ giúp chính bạn sở hữu nó một cách hợp pháp mà còn tạo tiền đề cho những tựa game ngày càng đỉnh hơn từ nhà phát triển.   </span>
+                        Mỗi một khoản tiền mà bạn chi ra để mua game đều sẽ trở về với nhà phát triển, về với những con người đã tạo ra những tựa game tuyệt vời cho bạn thưởng thức. Đây là khoản tiền mà họ xứng đáng được nhận sau bao nhiêu công sức đã bỏ ra, và cũng chính là kinh phí cho những dự án kế tiếp của họ. Tiền mà bạn bỏ ra để mua game không chỉ giúp chính bạn sở hữu nó một cách hợp pháp mà còn tạo tiền đề cho những tựa game ngày càng đỉnh hơn từ nhà phát triển. 
                         <br></br>
                         <br></br>
-                        <span>Ngược lại sử dụng bản crack không chỉ đơn giản là một món hời dành cho bạn, nó còn góp phần làm thất thoát khoản kinh phí mà những nhà phát triển, phát hành game xứng đáng được nhận, gây ra thiệt hại rất cho họ. Chơi game crack chính là bạn đã và đang góp phần bóp chết những người đã làm game cho bạn chơi.</span>
-
+                        Ngược lại sử dụng bản crack không chỉ đơn giản là một món hời dành cho bạn, nó còn góp phần làm thất thoát khoản kinh phí mà những nhà phát triển, phát hành game xứng đáng được nhận, gây ra thiệt hại rất cho họ. Chơi game crack chính là bạn đã và đang góp phần bóp chết những người đã làm game cho bạn chơi.
                     </div>
                     <div className='content-2'>
 

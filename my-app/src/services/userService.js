@@ -2,7 +2,7 @@ import axios  from "axios";
 
 const URL_user = "http://localhost:8080/api/user";
 
-export const GetUserbyID = (userId) => axios.get(URL_user + "/" +userId);
+// export const GetUserbyID = (userId) => axios.get(URL_user + "/" +userId);
 
 export const updateAccount = async (id, accountData) => {
     try {

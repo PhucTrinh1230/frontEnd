@@ -8,9 +8,9 @@ function DropdownProfile() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Game hot</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Game sale</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Game free</Dropdown.Item>
+        <Dropdown.Item href="/store">Tất cả Game</Dropdown.Item>
+        <Dropdown.Item href="/detail">Thể loại game</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Game Free</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

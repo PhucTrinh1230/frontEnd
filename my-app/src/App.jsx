@@ -16,6 +16,12 @@ import Header from './components/layout/Header';
 import HeaderProfile from './components/layout/Header/HeaderProfile';
 import ContentProfile from './components/layout/ContentProfile/ContentProfile';
 import FooterProfile from './components/layout/Footer/FooterProfile';
+import StoreGame from './pages/Store/Storegame';
+import Cart from './pages/Cart/cart';
+import Login from './pages/Login/Login';
+import Productdetail from './pages/Product/deatil';
+import About from './pages/AboutUs/about';
+import ContentProfilePage3 from './components/layout/ContentProfile/ContentProfile3';
 
 function App() {
   const currentURL = window.location.href;
@@ -32,19 +38,31 @@ function App() {
       currentURL === `http://localhost:3000/support/*` ||
       currentURL === `http://localhost:3000/support/support9`||
       currentURL === `http://localhost:3000/support/support4` ||
-      currentURL === `http://localhost:3000/support/support3` 
+      currentURL === `http://localhost:3000/support/support3`
+    
       
       ? (
         <Header/>
       ) : (
         <HeaderProfile/>
+        
+        
       )}
+  
+
+
       <Routes>
-      <Route path="" element={<MainContentProfile />}></Route>
+      {/* <Route path="" element={<MainContentProfile />}></Route> */}
+        <Route path="" element={<Login/>}></Route>
         <Route path="/profile/*" element={<MainContentProfile />}></Route>
         <Route path="/support/*" element={<MainContent/>}></Route>
         <Route path="/user/*" element={<MainContentProfile/>}></Route>
-        <Route path="" element={<ContentPage9/>}></Route>
+      
+        <Route path="/cart" element={<Cart/>}></Route>
+        {/* <Route path="/login" element={<Login/>}></Route> */}
+        <Route path="/detail" element={<Productdetail/>}></Route>
+        <Route path="/store" element={<StoreGame/>}></Route>
+        <Route path="/aboutus" element={<About/>}></Route>
         {/* <Route path="/profile/user/profile/{:id}" element={<ContentProfile userId={3}/>}></Route> */}
       </Routes>
       <FooterProfile/>

@@ -8,18 +8,18 @@ const FooterProfile = () => {
         <div className='Footer'>
             <div className='topFooter'>
                 <Container>
-                    <img className='imgthanhtoan1' src='https://cdn.divineshop.vn/static/b77a2122717d76696bd2b87d7125fd47.svg' alt='thanhtoanMomo' />
-                    <img className='imgthanhtoan2' src='https://cdn.divineshop.vn/static/72a3a36fc7c66085b3f442940ba45fde.svg' alt='thanhtoanVnpay' />
-                    <img className='imgthanhtoan3' src='https://cdn.divineshop.vn/static/464c7c79044dea88e86adf0e1b9c064c.svg' alt='thanhtoanVisa' />
-                    <img className='imgthanhtoan4' src='https://cdn.divineshop.vn/static/ddb866eb1214c914ea62417879046b99.svg' alt='thanhtoankhac' />
+                    <img id='imgthanhtoan1ft' src='https://cdn.divineshop.vn/static/b77a2122717d76696bd2b87d7125fd47.svg' alt='thanhtoanMomo' />
+                    <img id='imgthanhtoan1ft' src='https://cdn.divineshop.vn/static/72a3a36fc7c66085b3f442940ba45fde.svg' alt='thanhtoanVnpay' />
+                    <img id='imgthanhtoan1ft' src='https://cdn.divineshop.vn/static/464c7c79044dea88e86adf0e1b9c064c.svg' alt='thanhtoanVisa' />
+                    <img id='imgthanhtoan1ft' src='https://cdn.divineshop.vn/static/ddb866eb1214c914ea62417879046b99.svg' alt='thanhtoankhac' />
                     <span className='ttkhac'> và nhiều hình thức thanh toán khác</span>
                 </Container>
             </div>
             <div className='mainFooter'>
                 <Container>
-                    <img className='imgfooterfb' src='https://cdn.divineshop.vn/static/4ba68c7a47305b454732e1a9e9beb8a1.svg' alt='facebookFooter' />
-                    <img className='imgfooteryoutube' src='https://cdn.divineshop.vn/static/20334129395885adefc2e5217043f670.svg' alt='YoutubeFooter' />
-                    <img className='imgfooterins' src='https://cdn.divineshop.vn/static/4ae438165f9d5ea0fc6ff3da6051f938.svg' alt='insFooter' />
+                    <img id='imgfooterfb' src='https://cdn.divineshop.vn/static/4ba68c7a47305b454732e1a9e9beb8a1.svg' alt='facebookFooter' />
+                    <img id='imgfooterfb' src='https://cdn.divineshop.vn/static/20334129395885adefc2e5217043f670.svg' alt='YoutubeFooter' />
+                    <img id='imgfooterfb' src='https://cdn.divineshop.vn/static/4ae438165f9d5ea0fc6ff3da6051f938.svg' alt='insFooter' />
                     <hr></hr>
                     <Row>
                         <Col className='footerCot1' xxl={3} xl={3} lg={3} md={3} sm={3} xs={3} >
@@ -28,7 +28,7 @@ const FooterProfile = () => {
                       <br></br>
                       <a href='/support/support1' target='_blank'>Game bản quyền là gì</a>
                         <br></br>
-                        <a href='/support/support2' alt='sanphambanvuaxem'>Giới thiệu về chúng tôi</a>
+                        <a href='http://localhost:3000/aboutus' alt='sanphambanvuaxem'>Giới thiệu về chúng tôi</a>
                         <br></br>
                         <a href='/support/support5' alt='sanphambanvuaxem'>Điều khoản dịch vụ</a>
                         <br></br>

@@ -5,11 +5,11 @@ import { Link, NavLink } from 'react-router-dom';
 
 const ContentPage4 = () => {
     return (
-        <div className='wrapper'>
+        <div className='wrapper p-4'>
             <h3>Chính sách VIP</h3>
             <p>Mỗi khi sử dụng <strong>Dcoin</strong> để mua hàng khách hàng sẽ nhận được <strong>một điểm tích lũy.</strong> Khi đạt đủ số điểm tích lũy, tài khoản của quý khách sẽ được tự động nâng cấp thành các cấp VIP tương ứng</p>
             <br></br>
-            <table class="table m-2">
+            <table class="table ">
                 <thead>
                     <tr>
                         <th scope="col">Ưu đãi</th>

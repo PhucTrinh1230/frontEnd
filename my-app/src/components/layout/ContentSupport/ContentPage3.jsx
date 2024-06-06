@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 const ContentPage3 = () => 
 {
     return (
-       <div className='wrapper'>
+       <div className='wrapper p-4'>
         <h3>Hệ thống Fanpage chính thức </h3>
         <h5>Dưới đây là thông tin các Fanpage chính thức của Steam </h5>
         <br></br>

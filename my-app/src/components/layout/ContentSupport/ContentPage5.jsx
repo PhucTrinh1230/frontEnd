@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const ContentPage5 = () => {
     return (
-        <div className='wrapper'>
+        <div className='wrapper p-4'>
 
             <h3>Điều khoản dịch vụ</h3>
             <p><strong>1. Giới thiệu</strong></p>

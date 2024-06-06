@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 const ContentPage10 = () => 
 {
     return (
-        <div className='wrapper'>
+        <div className='wrapper p-4'>
             <h3>Thông tin bảo hành chung</h3>
             <img className='imgbaohanh1' src='https://help.divineshop.vn/~gitbook/image?url=https%3A%2F%2F532840585-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fassets%252F-M3-IU1k8a0MMGt6Gmx-%252F-MamG0I-dXEPsBnhhjPa%252F-MamGEem_SO8UhOXFuy6%252FDIVINE%2520SHOP%2520CAM%2520KET.png%3Falt%3Dmedia%26token%3Ddaacd2e0-a9e5-496f-b11d-4607beb17338&width=768&dpr=1&quality=100&sign=2ad5576f6af7af43f3620a551387313876e67ac1d1f397e5464867dac833b492' alt='camket'>
             </img>

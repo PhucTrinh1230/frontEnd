@@ -5,8 +5,8 @@ const Header = () => {
     // const [active , setActive] = useState(false);
 
     return (
-        <div className='container'>
-            <div className="header">
+        <div className="header">
+                <div className='container'>
                 
                 <img className='img' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/New_Steam_Logo_with_name.jpg/1200px-New_Steam_Logo_with_name.jpg' alt='logoSteam'></img>
                 <div className='thongtinuser'>
@@ -20,13 +20,6 @@ const Header = () => {
 
                 
 
-                <a
-            class="nav-link active"
-            aria-current="page"
-            href="http://localhost:3000/profile#"
-          >
-          Profile
-          </a>
 
                     <div class="input-group flex-nowrap">
                         <span className="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">

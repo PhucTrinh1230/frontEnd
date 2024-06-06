@@ -4,7 +4,7 @@ import './ContentPage2.css'
 import Btn from '../../common/ButtonSupport';
 const ContentPage2 = () => {
     return (
-        <div className="wrapper">
+        <div className="wrapper p-4">
             <h3>Giới thiệu Steam</h3>
             <p>Steam là website phân phối sản phẩm về Game bản quyền, Phần mềm, tiện ích hàng đầu Việt Nam.</p>
             <p><strong>Divine Shop có mục tiêu đơn giản như sau:</strong></p>
@@ -59,7 +59,7 @@ const ContentPage2 = () => {
                     <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0" />
                 </svg>
                 <strong>9 Năm liền là Shop phần mềm bản quyền uy tín nhất Việt Nam</strong><br></br>
-                <span>Do chính cộng đồng bình chọn từ các group về phần mềm và game bản quyền.</span>
+                Do chính cộng đồng bình chọn từ các group về phần mềm và game bản quyền.
             </div>
             <div class="p-3 m-3 bg-info bg-opacity-10 border border-info border-start-1 rounded-end">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square m-2" viewBox="0 0 16 16">
@@ -67,8 +67,8 @@ const ContentPage2 = () => {
                     <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0" />
                 </svg>
                 <strong>Hơn 1 Triệu Khách hàng tin tưởng và mua hàng</strong><br></br>
-                <span>Chúng tôi tự hào mang phần mềm bản quyền đến cho hơn 1 Triệu khách hàng tại Việt Nam trong suốt 9 năm hoạt động.
-                    Hàng tháng website Divineshop chào đón hơn 400.000 lượt truy cập mua hàng.</span>
+                Chúng tôi tự hào mang phần mềm bản quyền đến cho hơn 1 Triệu khách hàng tại Việt Nam trong suốt 9 năm hoạt động.
+                    Hàng tháng website Divineshop chào đón hơn 400.000 lượt truy cập mua hàng.
             </div>
             <div class="p-3 m-3 bg-info bg-opacity-10 border border-info border-start-1 rounded-end">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square m-2" viewBox="0 0 16 16">
@@ -76,8 +76,8 @@ const ContentPage2 = () => {
                     <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0" />
                 </svg>
                 <strong>Được các Kols, Streamer hàng đầu Việt Nam lựa chọn và quảng bá</strong><br></br>
-                <span>
-                    Mixigaming, Xemesis, Trực Tiếp Game, Nguyễn Quí Gamer, Divine Esports, v.v. </span>
+                
+                    Mixigaming, Xemesis, Trực Tiếp Game, Nguyễn Quí Gamer, Divine Esports, v.v.
             </div>
             <div class="p-3 m-3 bg-info bg-opacity-10 border border-info border-start-1 rounded-end">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square m-2" viewBox="0 0 16 16">
@@ -85,9 +85,9 @@ const ContentPage2 = () => {
                     <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0" />
                 </svg>
                 <strong>Fanpage với hơn 300.000 người theo dõi</strong><br></br>
-                <span>
+               
                     Chúng tôi xây dựng một cộng đồng lớn mạnh với rất nhiều Fanpage và Group sinh hoạt khác nhau.
-                    Fanpage: Steam Shop Game Bản Quyền, Steam TV, Steam Esports </span>
+                    Fanpage: Steam Shop Game Bản Quyền, Steam TV, Steam Esports 
             </div>
             <br></br>
             <h5>2. Sản phẩm đa dạng</h5>
@@ -106,23 +106,23 @@ const ContentPage2 = () => {
                     <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0zM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0" />
                 </svg>
                 <strong>Các phần mềm giải trí đa dạng</strong><br></br>
-                <span>Netflix, Youtube Premium, Spotify, v.v..</span>
+                Netflix, Youtube Premium, Spotify, v.v..
             </div>
             <div class="p-3 m-3 bg-info bg-opacity-10 border border-info border-start-1 rounded-end">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
                     <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0zM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0" />
                 </svg>
                 <strong>Các loại thẻ nạp</strong><br></br>
-                <span>
-                    Steam Wallet, iTunes, Google Play, v.v. </span>
+                
+                    Steam Wallet, iTunes, Google Play, v.v.
             </div>
             <div class="p-3 m-3 bg-info bg-opacity-10 border border-info border-start-1 rounded-end">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
                     <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0zM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0" />
                 </svg>
                 <strong>Các phần mềm học tập chất lượng</strong><br></br>
-                <span>
-                    Duolingo, Coursera, Skill Share, Linked In, Lumosity, Grammarly,v.v.</span>
+                
+                    Duolingo, Coursera, Skill Share, Linked In, Lumosity, Grammarly,v.v.
             </div>
             <br></br>
             <h5>3. Hình thức thanh toán thuận tiện</h5>
@@ -133,31 +133,31 @@ const ContentPage2 = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
                 </svg>
-                <span>Momo</span> <br></br>
+                Momo <br></br>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
                 </svg>
-                <span>VNPay</span> <br></br>
+                VNPay <br></br>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
                 </svg>
-                <span>Chuyển khoản ngân hàng</span> <br></br>
+            Chuyển khoản ngân hàng <br></br>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
                 </svg>
-                <span>ATM</span> <br></br>
+                ATM <br></br>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
                 </svg>
-                <span>Thẻ Viettel</span> <br></br>
+                Thẻ Viettel <br></br>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
                 </svg>
-                <span>Megapay</span> <br></br>
+                Megapay <br></br>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
                 </svg>
-                <span>Visa, Master</span> <br></br>
+                Visa, Master <br></br>
 
             </div>
             <div class="p-3 m-3 bg-info bg-opacity-10 border border-info border-start-1 rounded-end">
@@ -165,8 +165,8 @@ const ContentPage2 = () => {
                     <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0zM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0" />
                 </svg>
                 <strong>Hệ thống tự động giúp hoàn thành đơn hàng ngay lập tức</strong><br></br>
-                <span>
-                    Mọi quy trình thanh toán đều được tự động cao giúp khách hàng có thể hoàn thành đơn hàng chỉ trong 1 phút.</span>
+            
+                    Mọi quy trình thanh toán đều được tự động cao giúp khách hàng có thể hoàn thành đơn hàng chỉ trong 1 phút.
             </div>
             <br></br>
             <h5>4. Chế độ bảo hành và bảo trợ</h5>
@@ -178,8 +178,8 @@ const ContentPage2 = () => {
                     <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0" />
                 </svg>
                 <strong>Cam kết bảo hành</strong><br></br>
-                <span>Steam cam kết bảo hành với mọi sản phẩm. Thông tin bảo hành từng sản phẩm đều được ghi chi tiết theo từng loại sản phẩm.
-                    Trong suốt thời gian sử dụng sản phẩm. Bạn sẽ nhận được sự hỗ trợ từ đội ngũ tư vấn của chúng tôi <strong>hoàn toàn miễn phí.</strong></span>
+                Steam cam kết bảo hành với mọi sản phẩm. Thông tin bảo hành từng sản phẩm đều được ghi chi tiết theo từng loại sản phẩm.
+                    Trong suốt thời gian sử dụng sản phẩm. Bạn sẽ nhận được sự hỗ trợ từ đội ngũ tư vấn của chúng tôi <strong>hoàn toàn miễn phí.</strong>  
             </div>
             <div class="p-3 m-3 bg-info bg-opacity-10 border border-info border-start-1 rounded-end">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square m-2" viewBox="0 0 16 16">
@@ -187,8 +187,8 @@ const ContentPage2 = () => {
                     <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0" />
                 </svg>
                 <strong>Hỗ trợ tất cả các ngày trong năm</strong><br></br>
-                <span>Chúng tôi Online liên tục từ <strong>08:30 đến 23:00</strong> ,  tất cả các ngày trong năm kể cả lễ, Tết.
-                    Chúng tôi tự hào với thời gian phản hồi khách hàng trung bình là <strong>1 Phút.</strong></span>
+                Chúng tôi Online liên tục từ <strong>08:30 đến 23:00</strong> ,  tất cả các ngày trong năm kể cả lễ, Tết.
+                    Chúng tôi tự hào với thời gian phản hồi khách hàng trung bình là <strong>1 Phút.</strong>
             </div>
             <div class="p-3 m-3 bg-info bg-opacity-10 border border-info border-start-1 rounded-end">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square m-2" viewBox="0 0 16 16">
@@ -196,12 +196,12 @@ const ContentPage2 = () => {
                     <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0" />
                 </svg>
                 <strong>Đội ngũ tư vấn nhiều kinh nghiệm</strong><br></br>
-                <span>Đội ngũ tư vấn với nhiều năm kinh nghiệm sẽ giải đáp cho bạn tất cả các thắc mắc trong quá trình mua hàng và cài đặt sản phẩm.
-                    Với những trường hợp khó xử lý. Chúng tôi sẽ Teamview trực tiếp để cài đặt giúp bạn .</span>
+                Đội ngũ tư vấn với nhiều năm kinh nghiệm sẽ giải đáp cho bạn tất cả các thắc mắc trong quá trình mua hàng và cài đặt sản phẩm.
+                    Với những trường hợp khó xử lý. Chúng tôi sẽ Teamview trực tiếp để cài đặt giúp bạn.
             </div>
             <br></br>
             <h5>5. Giá cả và ưu đãi </h5>
-            <span>Chúng tôi đem đến cho khách hàng những sản phẩm với giá cả tốt nhất cùng với đó là những ưu đãi vô cùng hấp dẫn</span>
+            Chúng tôi đem đến cho khách hàng những sản phẩm với giá cả tốt nhất cùng với đó là những ưu đãi vô cùng hấp dẫn.
 
 
             <div class="p-3 m-3 bg-info bg-opacity-10 border border-info border-start-1 rounded-end">
@@ -210,11 +210,11 @@ const ContentPage2 = () => {
                     <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0" />
                 </svg>
                 <strong>Hệ thống khách hàng VIP </strong><br></br>
-                <span>Khách hàng thân thiết của Steam sẽ nhận được những ưu đãi vô cùng hấp dẫn như: <br></br>
+            Khách hàng thân thiết của Steam sẽ nhận được những ưu đãi vô cùng hấp dẫn như: <br></br>
                     - Hoàn tiền sau khi mua hàng <br></br>
                     - Ưu tiên thanh toán<br></br>
                     - Số điện thoại hỗ trợ riêng<br></br>
-                    Xem thêm chi tiết tại: Thông tin ưu đãi vip </span> <br></br>
+                    Xem thêm chi tiết tại: Thông tin ưu đãi vip. <br></br>
             </div>
             <br></br>
             <h3>Các thông tin liên hệ với chúng tôi</h3>

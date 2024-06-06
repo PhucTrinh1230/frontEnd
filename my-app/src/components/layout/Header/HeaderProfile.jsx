@@ -11,31 +11,18 @@ import { fetchUserDataById, GetUserbyID } from '../../../services/userService';
 import { mergeUserData, fetchUserData, mergeOneUser } from '../../../services/userService';
 import React, { useState, useEffect } from 'react';
 
-const HeaderProfile = ({userId}) => {
+const HeaderProfile = () => {
 
-
-    const [userData, setUserData] = useState([]);
-    const [error, setError] = useState(null);
-    useEffect(() => {
-        const getData = async () => {
-          try {
-            const { accountData, userDetailData } = await fetchUserDataById(userId);
-            const mergedOneUser = {
-              ...userDetailData,
-              email: accountData.email,
-              rankTypeId: accountData.rankTypeId,
-              accountBalance: accountData.accountBalance,
-              level: accountData.level,
-            };
-            setUserData(mergedOneUser);
-            
-          } catch (error) {
-            setError(error.message);
-          }
-        };
-    
-        getData();
-      }, [userId]);
+    // const getUsername = () =>
+    // {
+    //     const Id=2;
+    //     const responeAccount =   axios.get(`http://localhost:8080/api/account/${Id}`);
+    //     const account = responeAccount.data
+    //     const accountUsername = account.username
+    //     console.log(accountUsername)
+    //    return accountUsername;
+    // }
+   
 
     return (
         <div className='wrapper'>
@@ -68,7 +55,8 @@ const HeaderProfile = ({userId}) => {
                     <Container>
                         <Row>
                             <Col xxl={3} xl={3} lg={3} md={0} sm={0} xs={0} >
-                                <img className='LogoSteam' src='https://th.bing.com/th/id/R.93a4a65e7693d8b1739c9fb203089801?rik=0SXpP4ELODKVDw&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f05%2fSteam_icon_logo_logotype.png&ehk=Ya5ZQkkpV3rYH47HN9szTQIGNfhSUD5XF9CKYLZtQzc%3d&risl=&pid=ImgRaw&r=0' alt='Steam Shop' />
+                                {/* <img className='LogoSteam' src='tp%3a%29szTQIGNfhSUD5XF9CKYLZtQzc%3d&risl=&pid=ImgRaw&r=0' alt='Steam Shop' /> */}
+                                <a href='http://localhost:3000/store'><img className='LogoSteam' src='https://static.vecteezy.com/system/resources/previews/020/336/039/original/steam-logo-steam-icon-free-free-vector.jpg' alt='Steam Shop' /> </a>    
                             </Col>
 
                             <Col xxl={3} xl={3} lg={3} md={4} sm={4} xs={4} >
@@ -79,7 +67,7 @@ const HeaderProfile = ({userId}) => {
                             </Col>
                             <Col xxl={3} xl={3} lg={3} md={4} sm={4} xs={4} >
                                 <div className='thongtinUser'>
-                                    Xin chào: {userData.firstname}
+                                    Xin chào: <a href='http://localhost:3000/profile'> {localStorage.getItem('username')} </a>
                                     
                                 </div>
                             </Col>
@@ -94,8 +82,10 @@ const HeaderProfile = ({userId}) => {
                                     <button type="button" class="btn btn-primary" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                                         <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
                                         <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
-                                    </svg> Giỏ hàng <span class="badge text-bg-danger">4</span></button>
+                                    </svg> <a style={{ color: 'white'}} href='/cart' target='_blank'>Giỏ hàng</a> <span class="badge text-bg-danger">4</span></button>
+
                                 </div>
+                             
                             </Col>
                         </Row>
                     </Container>

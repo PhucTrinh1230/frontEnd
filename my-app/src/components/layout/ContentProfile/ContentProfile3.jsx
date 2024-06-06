@@ -7,11 +7,11 @@ import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const ContentProfilePage2 = () =>
+const ContentProfilePage3 = () =>
 {
     return(
         <div className="order-history">
-      <h5>Lịch sử đơn hàng</h5>
+      <h5>Lịch sử giao dịch</h5>
       <p>Hiển thị thông tin các sản phẩm bạn đã mua tại Steam Shop</p>
       <div className="filter-container">
         <input className='input-text-profile2' type="text" placeholder="Mã đơn hàng" />
@@ -25,25 +25,22 @@ const ContentProfilePage2 = () =>
         <thead>
           <tr>
             <th>Thời gian</th>
-            <th>Mã đơn hàng</th>
-            <th>Sản phẩm</th>
-            <th>Tổng tiền</th>
-            <th>Trạng thái</th>
+            <th>Mô tả</th>
+            <th>Số tiền</th>
+            
             <th></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>2018-12-23 23:54:22</td>
-            <td>2183642</td>
-            <td>PlayerUnknown's Battlegrounds PUBG</td>
+            <td>Mô tả</td>
             <td>199.000đ</td>
-            <td className="status">Đã xử lý</td>
-            <td><a href="#">Chi tiết</a></td>
+         
           </tr>
         </tbody>
       </table>
     </div>
     )
 }
-export default ContentProfilePage2
+export default ContentProfilePage3

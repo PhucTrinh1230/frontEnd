@@ -1,5 +1,5 @@
 const routes = [
-    { path: '/', name: 'Lý do nên mua game tại đây' },
+    { path: '/support/support1', name: 'Lý do nên mua game tại đây' },
     { path: '/support/support2', name: 'Giới thiệu về Steam Shop' },
     { path: '/support/support3', name: 'Hệ thống fanpage chính thức' },
     { path: '/support/support4', name: 'Chính sách VIP' },

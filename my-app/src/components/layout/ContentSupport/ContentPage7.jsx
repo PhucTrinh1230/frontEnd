@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const ContentPage7 = () => {
     return (
-        <div className='wrapper'>
+        <div className='wrapper p-4'>
             <h3>Hướng dẫn tạo tài khoản</h3>
             <h5>Bước 1:</h5>
             <p>Ở giao diện trang chủ Steam Shop, click vào <strong>Đăng kí</strong></p>

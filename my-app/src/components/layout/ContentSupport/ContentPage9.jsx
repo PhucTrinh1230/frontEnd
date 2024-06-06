@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const ContentPage9 = () => {
     return (
-        <div className='wrapper'>
+        <div className='wrapper p-4'>
             <h3>Hướng dẫn thanh toán</h3>
             <h5>Bước 1:</h5>
             Tìm kiếm và truy cập sản phẩm bạn muốn mua<br></br>
@@ -68,9 +68,9 @@ const ContentPage9 = () => {
             <br></br>
          
             <h5>Bước 4:</h5>
-            <span>
+            
 
-            Bạn sẽ được chuyển đến trang đơn hàng, tại đây bạn sẽ thấy Key game. Bạn hãy copy key game này và bấm vào nút <strong>Nhập key </strong>(hoặc hướng dẫn sử dụng) để tiến hành nhận sản phẩm nhé.</span>
+            Bạn sẽ được chuyển đến trang đơn hàng, tại đây bạn sẽ thấy Key game. Bạn hãy copy key game này và bấm vào nút <strong>Nhập key </strong>(hoặc hướng dẫn sử dụng) để tiến hành nhận sản phẩm nhé.
             
             <br></br>
             <br></br>
