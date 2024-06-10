@@ -3,7 +3,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 function DropdownProfile() {
   return (
     <Dropdown>
-      <Dropdown.Toggle variant="primary" id="dropdown-basic">
+      <Dropdown.Toggle variant="primary" id="dropdown-basic" style={{fontSize:'14px'}}>
         Danh mục sản phẩm
       </Dropdown.Toggle>
 

@@ -1,52 +1,54 @@
 .logo {
-  max-width: 100%; /* Ảnh sẽ không vượt quá kích thước của container cha */
-  height: auto; /* Đảm bảo tỷ lệ hình ảnh được duy trì khi thay đổi kích thước */
+  max-width: 100%; 
   width: 300px;
-  margin-top: 0; /* Loại bỏ khoảng cách từ đầu dòng */
-  margin-bottom: 10px; /* Thêm một khoảng cách dưới ảnh */
-  
+  margin-top: 0; 
+  margin-bottom: 10px; 
+
+
   
 }
 
 .online {
-  color: green; /* Màu cho văn bản online */
+  color: green; 
   font-size: 20px;
   
 
 }
 
 .offline {
-  color: rgb(26, 65, 156); /* Màu cho văn bản offline */
+  color: rgb(236, 24, 24); 
   
 }
 
 
-/* CSS cho số 34,000 */
+
 .ml-2 {
-  margin-left: 5px; /* Khoảng cách từ biểu tượng đến số */
-  font-size: 20px; /* Kích thước của số */
+  margin-left: 5px; 
+  font-size: 20px; 
   color: white;
 }
-/* CSS to center align images */
+
 .img-fluid {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
+ 
 }
 
-/* Assuming you have CSS classes defined for the 'title-holder' and 'browse' styles */
 
-/* CSS for title-holder */
+
+
 .title-holder {
-  text-align: center; /* Center align the content */
-  margin-top: 50px; /* Adjust margin top as needed */
+  text-align: center; 
+  margin-top: 50px; 
   color: white;
 }
 
 /* CSS for browse link */
 .browse {
-  text-decoration: underline; /* Underline the link */
-  cursor: pointer; /* Change cursor to pointer */
+  text-decoration: underline; 
+  cursor: pointer; 
   color: rgb(49, 85, 205);
 }
 
@@ -102,18 +104,18 @@
 .feature {
   padding: 20px;
   text-align: center;
-  color: #ffffff; /* Màu chữ trắng */
+  
 }
 
 .icon {
   max-width: 100px; /* Giảm kích thước của biểu tượng */
   height: auto;
-  filter: invert(100%); /* Đảo ngược màu của biểu tượng để làm nổi bật trên nền trắng */
+  /* filter: invert(100%); Đảo ngược màu của biểu tượng để làm nổi bật trên nền trắng */
 }
 .white-text {
   color: white;
 }
 
 .logo {
-  filter: brightness(0) invert(1); /* Đảo ngược màu sắc của hình ảnh để chuyển nó thành màu trắng */
+  /* filter: brightness(0) invert(1); Đảo ngược màu sắc của hình ảnh để chuyển nó thành màu trắng */
 }

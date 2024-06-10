@@ -4,17 +4,17 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { jwtDecode } from 'jwt-decode';
-function Login() {
+function Register() {
   const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const [roles, setRoles] = useState(null);
+    const [email, setEmail] = useState(null);
 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/api/v1/auth/authenticate', {
+            const response = await axios.post('http://localhost:8080/api/v1/auth/register', {
                 username,
                 password
             });
@@ -23,7 +23,7 @@ function Login() {
            localStorage.setItem('tokenFromJava',token);
 
            const decoded = jwtDecode(token);
-           setRoles(decoded.roles);
+    
            console.log(decoded.roles)
 
            
@@ -40,8 +40,9 @@ function Login() {
             alert("Sai tài khoản hoặc mật khẩu");
         }
     };
+
   return (
-    <div className="bgLogin" >
+    <div className="bgRegister" >
     <Container className="">
       <Row>
         <Col xl={12} className="d-flex justify-content-center align-items-center p-4">
@@ -56,11 +57,14 @@ function Login() {
                 <Form.Control type="password" size="lg" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} style={{fontSize:'16px'}} />
               </Form.Group>
 
-              <div className="d-flex justify-content-between mx-4 mb-4 text-white">
-                <Form.Check type="checkbox" label="Remember me" />
-                <a href="#!" style={{color:'white'}}>Forgot password?</a>
-              </div>
+              <Form.Group controlId="formPassword" className="mb-4">
+                <Form.Control type="password" size="lg" placeholder="Confirmpassword" value={password} onChange={(e) => setPassword(e.target.value)} style={{fontSize:'16px'}} />
+              </Form.Group>
 
+              <Form.Group controlId="formEmail" className="mb-4">
+                <Form.Control type="email" size="lg" placeholder="Email?" value={password} onChange={(e) => setEmail(e.target.value)} style={{fontSize:'16px'}} />
+              </Form.Group>
+       
               <Button type="submit" className="mb-4 w-75" size="lg" style={{fontSize:'16px', marginLeft:'49px'}}>Sign in</Button>
 
             
@@ -85,4 +89,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;

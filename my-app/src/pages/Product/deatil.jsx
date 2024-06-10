@@ -36,14 +36,14 @@ function removeActiveClasses() {
 }
 function Productdetail() {
   return (
-    <Container fluid className="mt-5">
+    <Container fluid className="mt-2">
       <Row className="justify-content-center align-items-center h-100">
         <Row className=" justify-content-center align-items-center h-100 mt-4 ">
       
           <Row className="align-items-center ">
           
             <Col sm={6} className="text-start">
-              <h3 id="spnb" className="hover-trigger text-white">
+              <h3 id="spnb" className="hover-trigger text-dark mb-3">
                 Game trên steam
               </h3>
             
@@ -98,9 +98,9 @@ function Productdetail() {
         </Form.Select>
       </Col>
       <Col>
-  <Button variant="danger">
+  <Button    variant="danger" style={{marginLeft:"52%", width:"50%"}}>
 
-  <FontAwesomeIcon icon={faFilter} style={{color:"#FFD43B"}} className="me-2" />
+  <FontAwesomeIcon icon={faFilter} style={{color:"#FFD43B"}} className="me-2 " />
 Lọc
   </Button>
 </Col>
@@ -110,12 +110,8 @@ Lọc
     
           
 
-          <section className=" custom-bg mt-5">
-            <Col sm={12} className="text-end">
-              <Button className="buttonhot" variant="primary">
-                Khám phá
-              </Button>
-            </Col>
+          <section className=" custom-bg mt-0">
+        
             <Row className="justify-content-center align-items-center h-100 mt-4">
               <Col xs={12} md={6} lg={3} className="mb-4">
                 <Card>
@@ -131,10 +127,10 @@ Lọc
                       </p>
                     </di>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">160.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -153,10 +149,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">160.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -175,10 +171,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">160.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -197,10 +193,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">188.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -219,10 +215,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">120.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -241,10 +237,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">37.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -263,10 +259,54 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">700.000đ</p>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs={12} md={6} lg={3} className="mb-4">
+                <Card>
+                  <CardImg
+                    className="product"
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1293830/header.jpg?t=1615337540"
+                    position="top"
+                    alt="Laptop"
+                  />
+                  <CardBody>
+                    <div className="d-flex justify-content-between">
+                      <p className="small">
+                        <h6>Forza Horizon 4 Ultimate Edition</h6>
                       </p>
                     </div>
+                    <div className="d-flex justify-content-between">
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs={12} md={6} lg={3} className="mb-4">
+                <Card>
+                  <CardImg
+                    className="product"
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/1293830/header.jpg?t=1615337540"
+                    position="top"
+                    alt="Laptop"
+                  />
+                  <CardBody>
+                    <div className="d-flex justify-content-between">
+                      <p className="small">
+                        <h6>Forza Horizon 4 Ultimate Edition</h6>
+                      </p>
+                    </div>
+                    <div className="d-flex justify-content-between">
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -307,10 +347,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -329,10 +369,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -351,10 +391,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -373,10 +413,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -395,10 +435,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -417,10 +457,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -439,10 +479,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -461,10 +501,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -483,10 +523,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -505,10 +545,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -527,10 +567,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -549,10 +589,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -571,10 +611,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>
@@ -593,54 +633,10 @@ Lọc
                       </p>
                     </div>
                     <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs={12} md={6} lg={3} className="mb-4">
-                <Card>
-                  <CardImg
-                    className="product"
-                    src="https://cdn.akamai.steamstatic.com/steam/apps/1293830/header.jpg?t=1615337540"
-                    position="top"
-                    alt="Laptop"
-                  />
-                  <CardBody>
-                    <div className="d-flex justify-content-between">
-                      <p className="small">
-                        <h6>Forza Horizon 4 Ultimate Edition</h6>
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs={12} md={6} lg={3} className="mb-4">
-                <Card>
-                  <CardImg
-                    className="product"
-                    src="https://cdn.akamai.steamstatic.com/steam/apps/1293830/header.jpg?t=1615337540"
-                    position="top"
-                    alt="Laptop"
-                  />
-                  <CardBody>
-                    <div className="d-flex justify-content-between">
-                      <p className="small">
-                        <h6>Forza Horizon 4 Ultimate Edition</h6>
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between">
-                      <p className="text-muted mb-0">
-                        <p className="fw-bold">790.000đ</p>
-                      </p>
-                    </div>
+                    <p className="text-muted ">
+                      <p className="fw-bold text-dark">160.000đ</p>
+                    </p>
+                  </div>
                   </CardBody>
                 </Card>
               </Col>

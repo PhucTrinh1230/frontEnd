@@ -84,7 +84,7 @@ function StoreGame() {
       </Row>
       <Row sm={12}>
         <Nav
-          className="custom-background custom-bg justify-content-center mb-3 mt-4"
+          className="custom-background custom-bg justify-content-center mb-2 mt-4"
           activeKey="/home"
         >
           <Col sm={3}>
@@ -129,21 +129,21 @@ function StoreGame() {
 
       <Row className=" justify-content-center align-items-center h-100 mt-4 ">
       <Row className="align-items-center ">
-      <Col sm={6} className="text-start">
-        <h3  id= "spnb"className="hover-trigger text-white">Sản phẩm nổi bật</h3>
-        <span className="hover-content d-block text-white">Danh sách những sản phẩm theo xu hướng</span>
+      <Col sm={12} className="text-start">
+        <h3  id= "spnb"className="hover-trigger text-dark">Sản phẩm nổi bật</h3>
+        <span className="hover-content d-block text-dark">Danh sách những sản phẩm theo xu hướng</span>
       </Col>
       
       </Row>
 
         <section className=" custom-bg mt-5">
         <Col sm={12} className="text-end">
-        <Button className="buttonhot" variant="primary">
+        {/* <Button className="buttonhot" variant="primary">
           Khám phá
-        </Button>
+        </Button> */}
       </Col>
-          <Row className="justify-content-center align-items-center h-100 mt-4">
-            <Col xs={12} md={6} lg={3} className="mb-4">
+          <Row className="justify-content-center align-items-center h-100 " style={{marginTop:'-30px'}}>
+            <Col xs={12} md={6} lg={3} className="mb-3">
               <Card >
                 <CardImg
                   className="product"
@@ -151,16 +151,16 @@ function StoreGame() {
                   position="top"
                 />
                 <CardBody>
-                  <di className="d-flex justify-content-between">
+                  <di className="d-flex justify-content-center">
                     <p className="small">
-                      <h6>resident evil 4 / biohazard 4</h6>
+                      <h6>Resident evil 4 / Biohazard 4</h6>
                     </p>
                   </di>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">160.000đ</p>
                     </p>
-                  </div>
+                  </div>  
                 </CardBody>
               </Card>
             </Col>
@@ -173,13 +173,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
                       <h6>In Silences</h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">160.000đ</p>
                     </p>
                   </div>
@@ -195,13 +195,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
                       <h6>Into The Haze</h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">160.000đ</p>
                     </p>
                   </div>
@@ -217,13 +217,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
                       <h6>ABZU</h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">188.000đ</p>
                     </p>
                   </div>
@@ -239,13 +239,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
                       <h6>The Witcher: Enhanced </h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">120.000đ</p>
                     </p>
                   </div>
@@ -261,13 +261,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
-                      <h5>Batman: Arkham Asylum </h5>
+                      <h6>Batman: Arkham Asylum </h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">37.000đ</p>
                     </p>
                   </div>
@@ -283,13 +283,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
                       <h6>Titanfall® 2 : Ultimate Edition </h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">700.000đ</p>
                     </p>
                   </div>
@@ -305,13 +305,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
                       <h6>Forza Horizon 4 Ultimate Edition</h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">790.000đ</p>
                     </p>
                   </div>
@@ -327,13 +327,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
                       <h6>Forza Horizon 4 Ultimate Edition</h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">790.000đ</p>
                     </p>
                   </div>
@@ -349,13 +349,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
                       <h6>Forza Horizon 4 Ultimate Edition</h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">790.000đ</p>
                     </p>
                   </div>
@@ -371,13 +371,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
                       <h6>Forza Horizon 4 Ultimate Edition</h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">790.000đ</p>
                     </p>
                   </div>
@@ -393,13 +393,13 @@ function StoreGame() {
                   alt="Laptop"
                 />
                 <CardBody>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-center">
                     <p className="small">
                       <h6>Forza Horizon 4 Ultimate Edition</h6>
                     </p>
                   </div>
-                  <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                  <div className="d-flex justify-content-center">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">790.000đ</p>
                     </p>
                   </div>
@@ -419,10 +419,10 @@ function StoreGame() {
 
         <section>
         <Row sm={12} className="justify-content-center align-items-center mt-4">
-      <Row className="align-items-center">
+      <Row className="align-items-center gioithieuStore">
         <Col sm={12} className="text-start">
-          <h3 id="tknb" className="text-start text-white">Từ khóa nổi bật</h3>
-          <span className="text-end text-white">Game hay chơi đều tay</span>
+          <h3 id="tknb" className="text-start text-dark">Từ khóa nổi bật</h3>
+          <span className="text-end text-dark">Game hay chơi đều tay</span>
         </Col>
       </Row>
       <Row className="mt-2">
@@ -454,14 +454,14 @@ function StoreGame() {
 
         <section className=" custom-bg mt-5">
         <Col sm={12} className="text-end">
-        <Button className="buttonhot" variant="primary">
+        {/* <Button className="buttonhot" variant="primary">
           Khám phá
-        </Button>
+        </Button> */}
       </Col>
           <Row sm={12}>
             <Col
               sm={2}
-              className="  Col-sm-2 panel active"
+              className="Col-sm-2 panel active"
               style={{
                 backgroundImage: `url('https://wegame.gtimg.com/g.511-r.c9b19/oss-images/oss_6423b8399311e.jpg')`,
               }}
@@ -484,7 +484,7 @@ function StoreGame() {
                 backgroundImage: `url('https://wegame.gtimg.com/g.2001128-r.5990c/info/58aae7a563c69bdcc2905fb370a8264b.jpg/1000')`,
               }}
             >
-              <h3>resident evil 4 / biohazard 4</h3>
+              <h3>Resident evil 4 / Biohazard 4</h3>
             </Col>
             <Col
               sm={2}
@@ -506,100 +506,7 @@ function StoreGame() {
             </Col>
           </Row>
 
-          <Row sm={12}>
-            <Col
-              sm={2}
-              className=" Col-sm-2 panel "
-              style={{
-                backgroundImage: `url('https://wegame.gtimg.com/g.2001938-r.899f5/info/043a650fff10945b6ca51da4ed59ba93.jpg')`,
-              }}
-            >
-              <h3>Call of Duty®: Black Ops</h3>
-            </Col>
-            <Col
-              sm={2}
-              className=" Col-sm-2 panel "
-              style={{
-                backgroundImage: `url('https://wegame.gtimg.com/g.55555-r.c4663/store/upload/game-list-top/agent/agent-01-%E6%B2%99%E7%9F%B3%E9%95%87%E6%97%B6%E5%85%89.png')`,
-              }}
-            >
-              <h3>Resident Evil Village</h3>
-            </Col>
-            <Col
-              sm={2}
-              className=" Col-sm-2 panel "
-              style={{
-                backgroundImage: `url('https://wegame.gtimg.com/g.55555-r.c4663/store/upload/game-list-top/agent/agent-05-%E7%94%9F%E6%AD%BB%E7%8B%99%E5%87%BB2.png')`,
-              }}
-            >
-              <h3>Metro 2033 Redux</h3>
-            </Col>
-            <Col
-              sm={2}
-              className=" Col-sm-2 panel "
-              style={{
-                backgroundImage: `url('https://wegame.gtimg.com/g.55555-r.c4663/store/upload/game-list-top/agent/agent-07-%E5%85%A8%E5%A2%83%E5%B0%81%E9%94%812.png')`,
-              }}
-            >
-              <h3>Tom Clancy’s The Division™</h3>
-            </Col>
-            <Col
-              sm={2}
-              className=" Col-sm-2 panel "
-              style={{
-                backgroundImage: `url('https://wegame.gtimg.com/g.2001715-r.9a324/agent-06-online.png')`,
-              }}
-            >
-              <h3>Mortal Kombat X</h3>
-            </Col>
-          </Row>
-          <Row sm={12}>
-            <Col
-              sm={2}
-              className=" Col-sm-2 panel active"
-              style={{
-                backgroundImage: `url('https://wegame.gtimg.com/g.511-r.c9b19/oss-images/oss_6423b8399311e.jpg')`,
-              }}
-            >
-              <h3>Explore The World</h3>
-            </Col>
-            <Col
-              sm={2}
-              className=" Col-sm-2 panel "
-              style={{
-                backgroundImage: `url('https://wegame.gtimg.com/g.2001480-r.b6b76/info/1d6e5b611e6c3e9136ac060e77af0e0f.jpg/1000')`,
-              }}
-            >
-              <h3>Tom Clancy's Ghost Recon® </h3>
-            </Col>
-            <Col
-              sm={2}
-              className=" Col-sm-2 panel "
-              style={{
-                backgroundImage: `url('https://wegame.gtimg.com/g.2001128-r.5990c/info/58aae7a563c69bdcc2905fb370a8264b.jpg/1000')`,
-              }}
-            >
-              <h3>resident evil 4 / biohazard 4</h3>
-            </Col>
-            <Col
-              sm={2}
-              className=" Col-sm-2 panel "
-              style={{
-                backgroundImage: `url('https://wegame.gtimg.com/g.2008261-r.678e1/info/b828e60eec6f7e1d8ac7c1868afce65d.jpg/1000')`,
-              }}
-            >
-              <h3>Days Gone CDKEY STEAM GLOBAL</h3>
-            </Col>
-            <Col
-              sm={2}
-              className=" Col-sm-2 panel "
-              style={{
-                backgroundImage: `url('https://wegame.gtimg.com/g.2002040-r.08f8d/info/ed343f93ffd6192eecd80d5b4b08f03f.jpg')`,
-              }}
-            >
-              <h3>Dying Light Enhanced Edition</h3>
-            </Col>
-          </Row>
+        
         </section>
 
 
@@ -611,8 +518,8 @@ function StoreGame() {
         <Row sm={12} className="justify-content-center align-items-center mt-4">
       <Row className="align-items-center">
         <Col sm={12} className="text-start">
-          <h3 id="gcph" className="text-start text-white">Giá cả phù hợp</h3>
-          <span className="text-end text-white">Game hay chơi đều tay</span>
+          <h3 id="gcph" className="text-start text-dark">Giá cả phù hợp</h3>
+          <span className="text-end text-dark">Game hay chơi đều tay</span>
         </Col>
       </Row>
       <Row className="mt-2">
@@ -647,14 +554,11 @@ function StoreGame() {
         
         <section className=" custom-bg  mt-5">
         <Row className="align-items-center ">
-      <Col sm={6} className="text-start">
-        <h3 id="spm" className="hover-trigger text-white">Sản phẩm mới</h3>
-        <span className="hover-content d-block text-white">Danh sách những sản phẩm theo xu hướng</span>
-      </Col>
+   
       <Col sm={6} className="text-end">
-        <Button className="buttonhot" variant="primary">
+        {/* <Button className="buttonhot" variant="primary">
           Khám phá
-        </Button>
+        </Button> */}
       </Col>
       </Row>
           <Row className=" custom-bg ustify-content-center align-items-center h-100">
@@ -668,11 +572,11 @@ function StoreGame() {
                 <CardBody>
                   <di className="d-flex justify-content-between">
                     <p className="small">
-                      <h6>resident evil 4 / biohazard 4</h6>
+                      <h6>Resident evil 4 / Biohazard 4</h6>
                     </p>
                   </di>
                   <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                    <p className="text-muted mb-0 " style={{marginTop:'-12px'}}>
                       <p className="fw-bold">160.000đ</p>
                     </p>
                   </div>
@@ -694,7 +598,7 @@ function StoreGame() {
                     </p>
                   </div>
                   <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">160.000đ</p>
                     </p>
                   </div>
@@ -716,7 +620,7 @@ function StoreGame() {
                     </p>
                   </div>
                   <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">160.000đ</p>
                     </p>
                   </div>
@@ -738,7 +642,7 @@ function StoreGame() {
                     </p>
                   </div>
                   <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">188.000đ</p>
                     </p>
                   </div>
@@ -760,7 +664,7 @@ function StoreGame() {
                     </p>
                   </div>
                   <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">120.000đ</p>
                     </p>
                   </div>
@@ -778,11 +682,11 @@ function StoreGame() {
                 <CardBody>
                   <div className="d-flex justify-content-between">
                     <p className="small">
-                      <h5>Batman: Arkham Asylum </h5>
+                      <h6>Batman: Arkham Asylum </h6>
                     </p>
                   </div>
                   <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">37.000đ</p>
                     </p>
                   </div>
@@ -804,7 +708,7 @@ function StoreGame() {
                     </p>
                   </div>
                   <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">700.000đ</p>
                     </p>
                   </div>
@@ -826,7 +730,7 @@ function StoreGame() {
                     </p>
                   </div>
                   <div className="d-flex justify-content-between">
-                    <p className="text-muted mb-0">
+                    <p className="text-muted mb-0" style={{marginTop:'-12px'}}>
                       <p className="fw-bold">790.000đ</p>
                     </p>
                   </div>
@@ -848,17 +752,17 @@ function StoreGame() {
 
         <Row className="align-items-center mt-4 ">
       <Col sm={12} className="text-start">
-        <h3  id = "spgg" className="hover-trigger text-white">Giảm giá đặc biệt</h3>
-        <span className="hover-content d-block text-white">Sale lễ hội mùa hè</span>
+        <h3  id = "spgg" className="hover-trigger text-dark">Giảm giá đặc biệt</h3>
+        <span className="hover-content d-block text-dark">Sale lễ hội mùa hè</span>
       </Col>
       
       </Row>
 
         <section  className=" custom-bg mt-5">
         <Col sm={12} className="text-end">
-        <Button className="buttonhot" variant="primary">
+        {/* <Button className="buttonhot" variant="primary">
           Khám phá
-        </Button>
+        </Button> */}
       </Col>
           <Row className="justify-content-center align-items-center h-100 mt-4">
           <Col xs={12} md={6} lg={3} className="mb-4">
@@ -872,15 +776,15 @@ function StoreGame() {
     <span className="badge bg-danger badge-discount">Giảm 10%</span>
   </div>
   <CardBody>
-    <div className="d-flex justify-content-between">
+    <div className="d-flex justify-content-center">
       <p className="small">
-        <h6>Resident Evil 4 / Biohazard 4</h6>
+        <h6>Resident evil 4 / Biohazard 4</h6>
       </p>
     </div>
-    <div className="d-flex justify-content-between">
-      <p className="text-muted mb-0">
+    <div className="d-flex justify-content-center">
+      <p className="text-muted mb-0" style={{marginTop:'-12px'}}   >
         {/* Giá gốc */}
-        <span className="fw-bold price-original"><del>160.000đ</del></span>
+        <span className="fw-bold price-original text-dark"><del>160.000đ</del></span>
         {/* Giá sau khi giảm */}
         <span className="fw-bold price-discount">140.000đ</span>
       </p>
@@ -901,13 +805,13 @@ function StoreGame() {
                 <CardBody>
                 <div className="d-flex justify-content-between">
       <p className="small">
-        <h6>Resident Evil 4 / Biohazard 4</h6>
+        <h6>Resident evil 4 / Biohazard 4</h6>
       </p>
     </div>
     <div className="d-flex justify-content-between">
       <p className="text-muted mb-0">
         {/* Giá gốc */}
-        <span className="fw-bold price-original"><del>160.000đ</del></span>
+        <span className="fw-bold price-original text-dark"><del>160.000đ</del></span>
         {/* Giá sau khi giảm */}
         <span className="fw-bold price-discount">140.000đ</span>
       </p>
@@ -928,13 +832,13 @@ function StoreGame() {
                 <CardBody>
                 <div className="d-flex justify-content-between">
       <p className="small">
-        <h6>Resident Evil 4 / Biohazard 4</h6>
+        <h6>Resident evil 4 / Biohazard 4</h6>
       </p>
     </div>
     <div className="d-flex justify-content-between">
       <p className="text-muted mb-0">
         {/* Giá gốc */}
-        <span className="fw-bold price-original"><del>160.000đ</del></span>
+        <span className="fw-bold price-original text-dark"><del>160.000đ</del></span>
         {/* Giá sau khi giảm */}
         <span className="fw-bold price-discount">140.000đ</span>
       </p>
@@ -954,13 +858,13 @@ function StoreGame() {
                 <CardBody>
                 <div className="d-flex justify-content-between">
       <p className="small">
-        <h6>Resident Evil 4 / Biohazard 4</h6>
+        <h6>Resident evil 4 / Biohazard 4</h6>
       </p>
     </div>
     <div className="d-flex justify-content-between">
       <p className="text-muted mb-0">
         {/* Giá gốc */}
-        <span className="fw-bold price-original"><del>160.000đ</del></span>
+        <span className="fw-bold price-original text-dark"><del>160.000đ</del></span>
         {/* Giá sau khi giảm */}
         <span className="fw-bold price-discount">140.000đ</span>
       </p>
@@ -980,13 +884,13 @@ function StoreGame() {
                 <span className="badge bg-danger badge-discount">Giảm 10%</span>
                 <div className="d-flex justify-content-between">
       <p className="small">
-        <h6>Resident Evil 4 / Biohazard 4</h6>
+        <h6>Resident evil 4 / Biohazard 4</h6>
       </p>
     </div>
     <div className="d-flex justify-content-between">
       <p className="text-muted mb-0">
         {/* Giá gốc */}
-        <span className="fw-bold price-original"><del>160.000đ</del></span>
+        <span className="fw-bold price-original text-dark"><del>160.000đ</del></span>
         {/* Giá sau khi giảm */}
         <span className="fw-bold price-discount">140.000đ</span>
       </p>
@@ -1007,13 +911,13 @@ function StoreGame() {
                 <span className="badge bg-danger badge-discount">Giảm 10%</span>
                 <div className="d-flex justify-content-between">
       <p className="small">
-        <h6>Resident Evil 4 / Biohazard 4</h6>
+        <h6>Resident evil 4 / Biohazard 4</h6>
       </p>
     </div>
     <div className="d-flex justify-content-between">
       <p className="text-muted mb-0">
         {/* Giá gốc */}
-        <span className="fw-bold price-original"><del>160.000đ</del></span>
+        <span className="fw-bold price-original text-dark"><del>160.000đ</del></span>
         {/* Giá sau khi giảm */}
         <span className="fw-bold price-discount">140.000đ</span>
       </p>
@@ -1033,13 +937,13 @@ function StoreGame() {
                 <span className="badge bg-danger badge-discount">Giảm 10%</span>
                 <div className="d-flex justify-content-between">
       <p className="small">
-        <h6>Resident Evil 4 / Biohazard 4</h6>
+        <h6>Resident evil 4 / Biohazard 4</h6>
       </p>
     </div>
     <div className="d-flex justify-content-between">
       <p className="text-muted mb-0">
         {/* Giá gốc */}
-        <span className="fw-bold price-original"><del>160.000đ</del></span>
+        <span className="fw-bold price-original text-dark"><del>160.000đ</del></span>
         {/* Giá sau khi giảm */}
         <span className="fw-bold price-discount">140.000đ</span>
       </p>
@@ -1059,13 +963,13 @@ function StoreGame() {
                 <span className="badge bg-danger badge-discount">Giảm 10%</span>
                 <div className="d-flex justify-content-between">
       <p className="small">
-        <h6>Resident Evil 4 / Biohazard 4</h6>
+        <h6>Resident evil 4 / Biohazard 4</h6>
       </p>
     </div>
     <div className="d-flex justify-content-between">
       <p className="text-muted mb-0">
         {/* Giá gốc */}
-        <span className="fw-bold price-original"><del>160.000đ</del></span>
+        <span className="fw-bold price-original text-dark"><del>160.000đ</del></span>
         {/* Giá sau khi giảm */}
         <span className="fw-bold price-discount">140.000đ</span>
       </p>

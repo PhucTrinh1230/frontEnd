@@ -1,7 +1,8 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sevillana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .wrapper{
     border-radius: 10px;
@@ -9,7 +10,7 @@
 
 .container
 {
-    font-family: "Lora", serif;
+    font-family: "Montserrat", sans-serif;
     
     
 }

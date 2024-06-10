@@ -1,26 +1,29 @@
 @media (min-width: 1280px) {
   .carousel-container {
-    width: 100vw;
+    margin-top: -20px;
+    width: 80vw;
     margin-left: calc((100% - 1280px) / 2);
     margin-right: calc((100% - 1280px) / 2);
   }
-}ousel-full-screen {
-  height: 100vh; /* Chiều cao của Carousel đầy màn hình */
+}
+ousel-full-screen {
+  height: 50vh; /* Chiều cao của Carousel đầy màn hình ở 100vh*/
 }
 
 .carousel-full-screen .carousel-item {
-  height: 100vh; /* Chiều cao của từng mục trong Carousel */
+  height: 50vh; /* Chiều cao của từng mục trong Carousel ở 100vh*/
 }
 
 .carousel-full-screen .carousel-item img {
-  object-fit: cover; /* Đảm bảo ảnh tràn đầy vùng chứa */
-  height: 100%;
-  width: 100%;
+  object-fit: cover; 
+  height: 80%;
+  width: 80%;
+
 }
 body{
-  /* background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255);ỏ hàng
    */
-   background-image: url('https://wegame.gtimg.com/g.55555-r.c4663/wukong/assets/feature-game-pc-01.BNS-F04C.jpg');
+   /* background-image: url('https://wegame.gtimg.com/g.55555-r.c4663/wukong/assets/feature-game-pc-01.BNS-F04C.jpg'); */
    
 
 
@@ -30,35 +33,44 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
   position: relative;
+  height: 450px;
   -webkit-transition: all 700ms ease-in;
+
   
-  /* background-image: url('https://wallpapers.com/images/high/counter-terrorist-4k-cs-go-2noq7zoc1n5i5beo.webp'); Đặt ảnh nền */
+  /* background-image: url('https://wallpapers.com/images/high/counter-terrorist-4k-cs-go-2noq7zoc1n5i5beo.webp'); */
 }
+
 
 .panel h3 {
   font-size: 20px;
-
   position: absolute;
   bottom: 20px;
   left: 20px;
   margin: 0;
   opacity: 0;
+
+}
+
+.justify-content-start{
+  margin-left: -22px;
 }
 
 .panel.active {
   flex: 5;
 }
+
+
 .panel.active h3 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
+
 
 .custom-link-button {
   text-decoration: none; /* Loại bỏ gạch chân mặc định */
@@ -102,7 +114,7 @@ transition: transform 0.3s ease;
 }
 
 .card p {
-  color: #e8e8e8; /* Đặt màu chữ trắng cho đoạn văn */
+  color: black;
 }
 .custom-bg-sale {
 
@@ -141,17 +153,22 @@ transition: transform 0.3s ease;
   border-radius: 10px;
 }
 .custom-background {
-  font-size: 15px;
-  background-color: #181a18
 
-;
+  background: rgb(36,0,0);
+background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(12,12,231,1) 0%, rgba(203,60,39,1) 100%, rgba(21,22,213,1) 100%);
+height: 80px;
+width: 1070px;
+margin-left: 135px;
+
 }
 .font{
   color: rgb(255, 251, 251);
-  font-size: 20px;
-
+  font-size: 18px;
+width: 220px;
+margin-left: 15%;
 
 }
+
 .custom-background {
 
   border-radius: 10px;
@@ -167,13 +184,13 @@ transition: transform 0.3s ease;
 }
 
 .text-start {
-  text-align: left !important;
+  text-align: center !important;
 }
 
 
-.text-end {
-  text-align: right !important;
-}
+/* .text-end {
+  text-align: center !important;
+} */
 
 
 
