@@ -1,14 +1,12 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, NavLink } from 'react-router-dom';
-import LayoutSupport from '../LayoutSupport';
+import { Link, NavLink, useParams } from 'react-router-dom';
 import './ContentProfile2.css'
-import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+
 
 const ContentProfilePage2 = () =>
 {
+  const {email} = useParams();
     return(
         <div className="order-history">
       <h5>Lịch sử đơn hàng</h5>

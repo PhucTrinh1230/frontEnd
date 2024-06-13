@@ -21,6 +21,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Nav from "react-bootstrap/Nav";
 import CardImg from "react-bootstrap/esm/CardImg";
 import CardBody from "react-bootstrap/esm/CardBody";
+import { useParams } from "react-router-dom";
 
 const panels = document.querySelectorAll(".panel");
 
@@ -37,13 +38,16 @@ function removeActiveClasses() {
   });
 }
 function StoreGame() {
+  const {email} = useParams();
   return (
+   
     <Container fluid className="mt-5">
       <Row className="justify-content-center align-items-center h-100">
         <Col className="carousel-container" sm={12}>
           <Carousel className="Carouselimg" interval={1000}>
-            {" "}
+          
             {/* Chuyển slide sau mỗi 3000ms (3 giây) */}
+          
             <Carousel.Item>
               <img
                 className="d-block w-100 carousel-img"

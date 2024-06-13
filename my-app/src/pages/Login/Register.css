@@ -1,0 +1,15 @@
+.bgRegister{
+
+    background-image: url('https://i.imgur.com/XvFEiXv.jpeg');
+    /* background-repeat: no-repeat; */
+    height:800px;
+    margin-top: -90px;
+  
+   
+  
+  
+  }
+
+  .mb-4 ::placeholder{
+color: white
+  }

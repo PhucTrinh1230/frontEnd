@@ -2,7 +2,7 @@
 // import './App.css';
 
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter, useParams } from 'react-router-dom';
 import Content from './components/layout/ContentSupport/Content';
 import ContentPage2 from './components/layout/ContentSupport/ContentPage2';
 import ContentPage3 from './components/layout/ContentSupport/ContentPage3';
@@ -17,7 +17,7 @@ import HeaderProfile from './components/layout/Header/HeaderProfile';
 import ContentProfile from './components/layout/ContentProfile/ContentProfile';
 import FooterProfile from './components/layout/Footer/FooterProfile';
 import StoreGame from './pages/Store/Storegame';
-import Cart from './pages/Cart/cart';
+import Cart from './pages/Cart/Cart';
 import Login from './pages/Login/Login';
 import Productdetail from './pages/Product/deatil';
 import About from './pages/AboutUs/about';
@@ -27,17 +27,22 @@ import Notfound from './pages/Notfound/Notfound';
 import ProtectedRoute from './pages/Decentralization/ProtectedRoute';
 import RoleBasedRoute from './pages/Decentralization/RoleBasedRoute';
 import Register from './pages/Login/Register';
+import OAuth from './pages/OAuth/OAuth';
+import Hello from './pages/OAuth/Hello';
+import SidebarProfile from './components/layout/ContentProfile/SidebarProfile';
+import { Row,Col } from 'react-bootstrap';
+import ContentProfilePage2 from './components/layout/ContentProfile/ContentPage2';
 
 function App() {
   const currentURL = window.location.href;
-
+  const { email } = useParams();
   let roles = localStorage.getItem('roleByLogin');
 
 
   function getisAuth() {
     if (roles != null)
       return true;
-      else
+    else
       return false;
   }
 
@@ -86,43 +91,151 @@ function App() {
       </Routes>
       <FooterProfile/>
     </BrowserRouter> */}
+
+
+
+
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/unauthorized" element={<Notfound/>} />
+          
+          <Route path="/unauthorized" element={<Notfound />} />
 
           <Route path="/" element={
-            <ProtectedRoute isAuthenticated={isAuthenticated}>
+            <ProtectedRoute isAuthenticated={!isAuthenticated}>
+              
               <HeaderProfile/>
-              <Register/>
-              <FooterProfile/>
+              <StoreGame/>
+              <FooterProfile />
             </ProtectedRoute>
           } />
 
+
+
+<Route path="/login" element={
+            <ProtectedRoute isAuthenticated={!isAuthenticated}>
+              <HeaderProfile />
+              <Login/>
+              <FooterProfile />
+            </ProtectedRoute>
+          } />
+
+
+<Route path="/" element={
+            <ProtectedRoute isAuthenticated={isAuthenticated}>
+              <HeaderProfile />
+              <StoreGame/>
+              <FooterProfile />
+            </ProtectedRoute>
+          } />
+
+
+
+
           <Route path="/admin/*" element={
             <RoleBasedRoute isAuthenticated={isAuthenticated} userRoles={roles} allowedRoles={['ADMIN']}>
-                 <HeaderProfile/>
+              <HeaderProfile />
               <CrudStaff />
+              <FooterProfile />
+            </RoleBasedRoute>
+          } />
+
+<Route path="/store" element={
+            <RoleBasedRoute isAuthenticated={!isAuthenticated} userRoles={roles} allowedRoles={['STAFF', 'ADMIN', 'USER']}>
+               <HeaderProfile />
+              <StoreGame />
+              <FooterProfile />
+            </RoleBasedRoute>
+          } />
+
+
+
+          <Route path="/store/:email" element={
+            <RoleBasedRoute isAuthenticated={isAuthenticated} userRoles={roles} allowedRoles={['STAFF', 'ADMIN', 'USER']}>
+               <HeaderProfile />
+              <StoreGame />
+              <FooterProfile />
+            </RoleBasedRoute>
+          } />
+
+<Route path="/store/:email/profile" element={
+            <RoleBasedRoute isAuthenticated={isAuthenticated} userRoles={roles} allowedRoles={['STAFF', 'ADMIN', 'USER']}>
+             <HeaderProfile/>
+              <Col xxl={3} xl={3} md={3} sm={3}>
+              <SidebarProfile/>
+              </Col>
+              <Col xxl={9} xl={9} md={9} sm={9}>
+              <ContentProfile/>
+              </Col>
+            </RoleBasedRoute>
+          } />
+
+
+
+
+          <Route path="/cart" element={
+            <RoleBasedRoute isAuthenticated={isAuthenticated} userRoles={roles} allowedRoles={['STAFF', 'ADMIN', 'USER']}>
+              < Cart />
+
+            </RoleBasedRoute>
+          } />
+
+          <Route path="/register" element={
+            <RoleBasedRoute isAuthenticated={isAuthenticated} userRoles={roles} allowedRoles={['STAFF', 'ADMIN', 'USER']}>
+              <Register/>
+
+            </RoleBasedRoute>
+          } />
+
+
+<Route path="/profile/:email" element={
+            <RoleBasedRoute isAuthenticated={isAuthenticated} userRoles={roles} allowedRoles={['STAFF', 'ADMIN', 'USER']}>
+              <HeaderProfile/>
+              <SidebarProfile/>
+              <ContentProfile/>
               <FooterProfile/>
             </RoleBasedRoute>
           } />
 
-          <Route path="/store" element={
-            <RoleBasedRoute isAuthenticated={isAuthenticated} userRoles={roles} allowedRoles={['STAFF', 'ADMIN','USER']}>
-              <StoreGame />
-
+<Route path="/profile/user/myprofile" element={
+            <RoleBasedRoute isAuthenticated={isAuthenticated} userRoles={roles} allowedRoles={['STAFF', 'ADMIN', 'USER']}>
+              <HeaderProfile/>
+              <Col xxl={3} xl={3} md={3} sm={3}>
+              <SidebarProfile/>
+              </Col>
+              <Col xxl={9} xl={9} md={9} sm={9}>
+              <ContentProfile/>
+              </Col>
+              <FooterProfile/>
             </RoleBasedRoute>
           } />
 
-          <Route path="/cart" element={
-            <RoleBasedRoute isAuthenticated={isAuthenticated} userRoles={roles} allowedRoles={['STAFF', 'ADMIN','USER']}>
-              < Cart/>
 
+<Route path="/profile/user/orders" element={
+            <RoleBasedRoute isAuthenticated={isAuthenticated} userRoles={roles} allowedRoles={['STAFF', 'ADMIN', 'USER']}>
+              <HeaderProfile/>
+              <Row>
+                <Col xxl={3} xl={3} md={3} sm={3}>
+              <SidebarProfile/>
+              </Col>
+              <Col xxl={9} xl={9} md={9} sm={9}>
+              <ContentProfilePage2/>
+              </Col>
+              </Row>
+              <FooterProfile/>
             </RoleBasedRoute>
           } />
 
         </Routes>
-      </BrowserRouter>
+
+</BrowserRouter>
+
+       {/* <BrowserRouter>
+        <Routes>
+            <Route path="/" element={ <OAuth/>}></Route>
+            <Route path="/hello" element={ <Hello/>}></Route> 
+            <Route path="/hello/:email" element={ <Hello/>}></Route> 
+        </Routes>
+       </BrowserRouter> */}
 
     </React.Fragment>
 

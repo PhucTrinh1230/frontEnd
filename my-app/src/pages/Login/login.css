@@ -6,8 +6,8 @@
   }
 
   .form-control::placeholder {
-    color: #6c757d;
-    opacity: 1;
+   color:white;
+   
   }
   
   .img-fluid {
@@ -31,3 +31,31 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
+  .bgLogin
+  {
+    background-image: url('https://i.imgur.com/XvFEiXv.jpeg');
+    /* background-repeat: no-repeat; */
+    background-size: 100% 120%;
+    margin-top: -100px;
+  }
+
+  .google{
+    cursor: pointer;  
+  }
+
+  .bgLogin{
+
+    background-image: url('https://i.imgur.com/XvFEiXv.jpeg');
+    /* background-repeat: no-repeat; */
+    background-size: 100% 120%;
+    margin-top: -100px;
+  
+  
+  
+  }
+
+
+
+  .mb-4 ::placeholder{
+color: white
+  }

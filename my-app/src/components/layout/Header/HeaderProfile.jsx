@@ -1,18 +1,46 @@
 import './HeaderProfile.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, NavLink } from 'react-router-dom';
-import LayoutSupport from '../LayoutSupport';
-import Dropdown from 'react-bootstrap/Dropdown';
+import { Link} from 'react-router-dom';
 import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
 import DropdownProfile from '../../common/DropdownProfile';
-import axios from 'axios';
-import { useParams } from 'react-router-dom';
-import { fetchUserDataById, GetUserbyID } from '../../../services/userService';
-import { mergeUserData, fetchUserData, mergeOneUser } from '../../../services/userService';
-import React, { useState, useEffect } from 'react';
+import { useParams,useNavigate } from 'react-router-dom';
+import React from 'react';
+
 
 const HeaderProfile = () => {
+    const {email} = useParams();
+    const navigate = useNavigate();
 
+
+    // const token = email;
+    // const decoded = jwtDecode(token);
+    // const emailAccount = decoded.email;
+
+
+  
+
+    // useEffect(() => {
+    //     const role = localStorage.getItem('roleByLogin');
+    //     if (role!=null) {
+    //         setIsLoggedIn(true);
+    //     } else {
+    //         setIsLoggedIn(false);
+    //     }
+    // }, []);
+
+
+
+    const handleLogout = (e) => {
+       
+        localStorage.removeItem('tokenFromJava');
+        localStorage.removeItem('roleByLogin');
+        window.location.href = "http://localhost:3000"
+
+       
+    };
+
+    // const decoded = jwtDecode(email);
+   
     // const getUsername = () =>
     // {
     //     const Id=2;
@@ -69,12 +97,15 @@ const HeaderProfile = () => {
                             </Col>
                             <Col xxl={3} xl={3} lg={3} md={4} sm={4} xs={4} >
                                 <div className='thongtinUser'>
-                                    Xin chào: <a href='http://localhost:3000/profile'> {localStorage.getItem('username')} </a>
+                                    Xin chào:   <Link to={`/store/${email}/profile`}>{email}</Link>
 
                                 </div>
+                                 <button onClick={handleLogout}>
+            Logout
+        </button>
                             </Col>
 
-
+                      
 
 
 

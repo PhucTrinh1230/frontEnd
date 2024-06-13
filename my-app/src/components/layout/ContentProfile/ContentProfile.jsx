@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { fetchUserDataById, GetUserbyID } from '../../../services/userService';
-import { mergeUserData, fetchUserData, mergeOneUser, updateAccount } from '../../../services/userService';
 import { Container } from 'react-bootstrap';
 import './ContentProfile.css'
+import { jwtDecode } from 'jwt-decode';
 
 const ContentProfile = ({ userId }) => {
     const [userData, setUserData] = useState([]);
     const [error, setError] = useState(null);
-    
+    const {email} = useParams();
     const {accountId} = useParams()
     
     const [accountDatachange, setAccountData] = useState({
@@ -22,24 +21,24 @@ const ContentProfile = ({ userId }) => {
       
     const [success, setSuccess] = useState(false);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setAccountData({
-            [name]: value,
-        });
-    };
+    // const handleChange = (e) => {
+    //     const { name, value } = e.target;
+    //     setAccountData({
+    //         [name]: value,
+    //     });
+    // };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            await updateAccount(accountId, accountDatachange);
-            setSuccess(true);
-            setError(null);
-        } catch (error) {
-            setSuccess(false);
-            setError(error.message);
-        }
-    };
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     try {
+    //         await updateAccount(accountId, accountDatachange);
+    //         setSuccess(true);
+    //         setError(null);
+    //     } catch (error) {
+    //         setSuccess(false);
+    //         setError(error.message);
+    //     }
+    // };
 
     useEffect(() => {
         const getData = async () => {
@@ -65,26 +64,26 @@ const ContentProfile = ({ userId }) => {
 
 
     
-
+    const decoded = jwtDecode((localStorage.getItem('tokenFromJava')));
 
 
 
     return (
         <div>
-            <Container>
-            <div className='thongtinaccountpage1'>
-                <h5>Tổng quan</h5>
+          <Container>
+            <div className='thongtinaccountpage1' style={{width:'300px'}}>
+                 <h5>Profile Page for {email}</h5>
                 <br></br>
-                Họ và tên:  <strong>{userData.lastname}</strong>  <strong>{userData.firstname}</strong><br></br>
-                Email: <strong>{userData.email}</strong><br></br>
-                Rank Type: <strong>{userData.rankTypeId}</strong><br></br>
+                Username:  <strong>{decoded.username}</strong>  <br></br><br></br>
+                Rank Account: <strong>{decoded.rankAccount.name}</strong><br></br><br></br>
+              {/* Account id hien thi len de lay user: <strong>{decoded.accountId}</strong><br></br> */}
 
-                Account Balance: <strong>{userData.accountBalance}</strong><br></br>
-                Level: <strong>{userData.level}</strong><br></br>
+                Account Balance: <strong>{decoded.accountBalance}</strong><br></br><br></br>
+                Level: <strong>{decoded.level}</strong><br></br>
             </div>
-            <hr></hr>
-
-            </Container>
+       
+        </Container>
+       
             {/* <div>
 
                 <h5>Update Account Information</h5>

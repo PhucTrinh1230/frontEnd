@@ -28,11 +28,15 @@ span>a {
     margin-top: 0px;
     position: absolute;
 }
+body {
+    overflow-x: hidden;
+  }
 
 .mainHeader {
     background: rgb(36,0,0);
     background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(0,212,255,1) 0%, rgba(203,60,39,1) 0%, rgba(12,12,231,1) 100%);
     margin-top: -20px;
+    width: 100%;
    
 }
 
@@ -101,4 +105,5 @@ span>a {
 .footerHeader
 {
     height: 50px;
+    margin-bottom: 100px;
 }
